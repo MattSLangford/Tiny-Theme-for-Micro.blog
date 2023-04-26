@@ -31,3 +31,14 @@ ul.post_list {
 	list-style-type: none;
 	padding: 0;
 }
+
+ul.post_list li {
+	display: flex;
+	justify-content: space-betwen;
+	line-height: 1.4;
+	margin: .5em 0;
+}
+
+ul.post_list .dt-published {
+	flex-shrink: 0;
+}
