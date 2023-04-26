@@ -68,6 +68,20 @@ ul.post_list .dt-published {
 	color: #666;
 }
 
+.microblog_conversation {
+	max-width: 600px;
+}
+.microblog_post {
+	margin-bottom: 1em;
+}
+.microblog_user {
+	font-weight: bold;
+}
+.microblog_time {
+	color: #666;
+	font-size: 0.8em;
+}
+
 footer {
 	text-align: center;
 }
