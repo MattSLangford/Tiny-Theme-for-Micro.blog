@@ -31,7 +31,8 @@ nav ul {
 
 nav ul li {
 	display: inline;
-	margin-right: 1em;
+	margin-right: 0.5em;
+	margin-left: 0.5em;
 }
 
 ul.post_list {
