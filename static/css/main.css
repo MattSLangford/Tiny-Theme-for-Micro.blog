@@ -8,10 +8,21 @@ header {
 	margin-bottom: 2em;
 }
 
+header h1 a {
+	text-decoration: none;
+	color: black;
+}
+
+header h1 a:hover {
+	color: #333;
+}
+
 nav ul {
 	list-style-type: none;
+	padding: 0;
 }
 
 nav ul li {
 	display: inline;
+	margin-right: 1em;
 }
