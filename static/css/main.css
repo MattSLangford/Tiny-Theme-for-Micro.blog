@@ -58,6 +58,7 @@ ul.post_list li {
 ul.post_list .dt-published {
 	flex-shrink: 0;
 	color: #666;
+	padding-left: 1em;
 }
 
 li.post-title {
