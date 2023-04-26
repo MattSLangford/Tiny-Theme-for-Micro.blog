@@ -1,0 +1,38 @@
+{{ define "main" }}
+<div class="posts h-feed">
+        {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 20) }}
+		{{ range $paginator.Pages  }}
+        <div class="post{{ range .Params.categories }} {{ . }}{{ end }}">
+                <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "2 January 2006" }}</time> ∞</a>
+                {{ if .Title }}
+                	<h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                {{ end }}
+                {{ if or (not .Title) (and .Title (in .Params.categories "Bookmark")) }}
+		            <div class="e-content">
+		                {{ .Content }}
+                    </div>
+				{{ else }}
+		            <div class="e-content">
+		                <p>{{ .Content | safeHTML | truncate 200 }}</p>
+                    </div>
+				{{ end }}              
+        </div>
+        {{ end }}
+</div>
+<div class="post-nav">
+    {{ if $paginator.HasPrev }}
+        <span class="prev">
+			<a href="{{ $paginator.Prev.URL }}" title="Previous Page">
+				<span class="arrow">←</span> Newer
+			</a>
+        </span>
+    {{ end }}
+    {{ if $paginator.HasNext }}
+        <span class="next">
+            <a href="{{ $paginator.Next.URL }}">
+                Older <span class="arrow">→</span>
+            </a>
+        </span>
+    {{ end }}
+</div>
+{{ end }}
