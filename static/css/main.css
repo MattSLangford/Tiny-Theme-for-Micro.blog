@@ -62,3 +62,11 @@ ul.post_list .dt-published {
 .post-nav a:visited {
 	color: #3300FF;
 }
+
+footer {
+	text-align: center;
+}
+
+footer .custom-footer {
+	font-size: 0.8em;
+}

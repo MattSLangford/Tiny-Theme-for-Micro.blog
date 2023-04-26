@@ -1,0 +1,14 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-3">
+        <p class="text">{{ .Site.Params.description | safeHTML }}</p>
+		<p class="custom_footer">{{ partial "custom_footer.html" . }}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
