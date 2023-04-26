@@ -82,6 +82,7 @@ ul.post_list .dt-published {
 	width: 40px;
 	height: auto;
 	border-radius: 40px;
+	max-width: 40px !important;
 }
 .microblog_time a, .microblog_time a:visited {
 	color: #666;
