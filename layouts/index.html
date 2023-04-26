@@ -23,14 +23,14 @@
     {{ if $paginator.HasPrev }}
         <span class="prev">
 			<a href="{{ $paginator.Prev.URL }}" title="Previous Page">
-				<span class="arrow">←</span> Newer
+				<span class="arrow">←</span> Newer Posts
 			</a>
         </span>
     {{ end }}
     {{ if $paginator.HasNext }}
         <span class="next">
             <a href="{{ $paginator.Next.URL }}">
-                Older <span class="arrow">→</span>
+                Older Posts<span class="arrow">→</span>
             </a>
         </span>
     {{ end }}
