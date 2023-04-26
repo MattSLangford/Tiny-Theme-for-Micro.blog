@@ -6,6 +6,14 @@ body {
 	padding: 0 1em;
 }
 
+a {
+	color: #017698;
+}
+
+a:visited {
+	color: #804180;
+}
+
 header {
 	margin-bottom: 2em;
 }
