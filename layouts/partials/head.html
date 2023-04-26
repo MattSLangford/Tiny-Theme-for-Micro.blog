@@ -8,6 +8,7 @@
   <meta property="og:title" content="{{ . }}" />
 {{ else }}
   <meta name="twitter:title" content="{{ .Site.Title }}" />
+  <meta property="og:title" content="{{ .Site.Title }}" />
 {{ end }}
 <meta name="twitter:description" content="{{ .Summary }}" />
 {{ range .Params.photos }}

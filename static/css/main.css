@@ -77,6 +77,26 @@ article img {
 	height: auto;
 }
 
+blockquote {
+	border-left: 2px solid #333;
+	padding-left: 10px;
+	color: #333;
+}
+pre {
+	background: #e3e3e3;
+	padding: 5px;
+	overflow: auto;
+}
+hr {
+	margin 2em:
+	border: 1px solid #666;
+}
+sup a {
+	text-decoration: none;
+}
+.footnote-backref {
+	text-decoration: none;
+}
 .microblog_conversation {
 	max-width: 600px;
 	margin-top: 3em;
