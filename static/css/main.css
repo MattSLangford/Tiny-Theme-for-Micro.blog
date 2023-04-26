@@ -61,7 +61,7 @@ ul.post_list .dt-published {
 	padding-left: 1em;
 }
 
-li.post-title {
+li.post-title a {
 	font-weight: bold;
 }
 
