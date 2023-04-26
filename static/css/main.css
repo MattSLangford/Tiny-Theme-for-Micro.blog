@@ -4,6 +4,7 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-size: 1.1em;
 	padding: 0 1em;
+	line-height: 1.6;
 }
 
 header {
@@ -63,10 +64,14 @@ ul.post_list .dt-published {
 	color: #3300FF;
 }
 
+.post-meta {
+	color: #666;
+}
+
 footer {
 	text-align: center;
 }
 
-footer .custom-footer {
+footer .custom_footer {
 	font-size: 0.8em;
 }
