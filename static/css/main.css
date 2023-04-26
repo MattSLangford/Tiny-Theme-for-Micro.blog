@@ -15,6 +15,7 @@ header h1 a, header h1 a:visited {
 	text-decoration: none;
 	color: black;
 }
+
 img.profile_photo {
 	border-radius: 80px;
 }
@@ -22,9 +23,11 @@ img.profile_photo {
 nav a {
 	text-decoration: underline;
 }
+
 header h1 {
 	margin-top: 0.2em;
 }
+
 header h1 a:hover {
 	color: #333;
 }
@@ -54,6 +57,7 @@ ul.post_list li {
 
 ul.post_list .dt-published {
 	flex-shrink: 0;
+	color: #666;
 }
 
 li.post-title {
