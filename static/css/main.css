@@ -11,7 +11,7 @@ header {
 	margin-bottom: 2em;
 }
 
-header h1 a, header h1 a:visited, nav a, nav a:visited {
+header h1 a, header h1 a:visited {
 	text-decoration: none;
 	color: black;
 }
@@ -20,7 +20,7 @@ nav a {
 	text-decoration: underline;
 }
 
-header h1 a:hover, nav a:hover {
+header h1 a:hover {
 	color: #333;
 }
 
