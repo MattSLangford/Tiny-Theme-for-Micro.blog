@@ -38,7 +38,7 @@ ul.post_list li {
 	display: flex;
 	justify-content: space-between;
 	line-height: 1.4;
-	margin: .5em 0;
+	margin: .8em 0;
 }
 
 ul.post_list .dt-published {

@@ -4,9 +4,9 @@
         {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 20) }}
 		{{ range $paginator.Pages  }}
                 {{ if .Title }}
-                	<li class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "January 2, 2006" }}</time></li>
+                	<li class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></li>
 				{{ else }}
-		            <li class="post-truncated"><a href="{{ .Permalink }}">{{ .Content | plainify | truncate 75 }}</a><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "January 2 2006" }}</time></li>
+		            <li class="post-truncated"><a href="{{ .Permalink }}">{{ .Content | plainify | truncate 75 }}</a><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></li>
 				{{ end }}             
         {{ end }}
         </ul> 
