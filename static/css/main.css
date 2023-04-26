@@ -50,6 +50,10 @@ ul.post_list .dt-published {
 	flex-shrink: 0;
 }
 
+li.post-title a {
+	font-weight: bold;
+}
+
 .post-nav {
 	margin-top: 2.5em;
 	margin-bottom: 2.5em;
@@ -70,9 +74,11 @@ ul.post_list .dt-published {
 
 .microblog_conversation {
 	max-width: 600px;
+	margin-top: 3em;
+	margin-bottom: 2em;
 }
 .microblog_post {
-	margin-bottom: 1em;
+	margin-bottom: 2em;
 }
 .microblog_user {
 	font-weight: bold;
