@@ -77,7 +77,13 @@ ul.post_list .dt-published {
 .microblog_user {
 	font-weight: bold;
 }
-.microblog_time {
+.microblog_user img {
+	vertical-align: middle;
+	width: 40px;
+	height: auto;
+	border-radius: 40px;
+}
+.microblog_time a, .microblog_time a:visited {
 	color: #666;
 	font-size: 0.8em;
 }
