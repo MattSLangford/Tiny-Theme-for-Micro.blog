@@ -29,4 +29,5 @@ nav ul li {
 
 ul.post_list {
 	list-style-type: none;
+	padding: 0;
 }
