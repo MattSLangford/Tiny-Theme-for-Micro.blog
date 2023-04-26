@@ -6,24 +6,20 @@ body {
 	padding: 0 1em;
 }
 
-a {
-	color: #017698;
-}
-
-a:visited {
-	color: #804180;
-}
-
 header {
 	margin-bottom: 2em;
 }
 
-header h1 a {
+header h1 a, header h1 a:visited, nav a, nav a:visited {
 	text-decoration: none;
 	color: black;
 }
 
-header h1 a:hover {
+nav a {
+	text-decoration: underline;
+}
+
+header h1 a:hover, nav a:hover {
 	color: #333;
 }
 
