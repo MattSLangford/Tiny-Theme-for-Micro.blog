@@ -50,7 +50,7 @@ ul.post_list .dt-published {
 	flex-shrink: 0;
 }
 
-li.post-title a {
+li.post-title {
 	font-weight: bold;
 }
 
@@ -70,6 +70,10 @@ li.post-title a {
 
 .post-meta {
 	color: #666;
+}
+
+article img {
+	width: 100%;
 }
 
 .microblog_conversation {
