@@ -34,7 +34,7 @@ ul.post_list {
 
 ul.post_list li {
 	display: flex;
-	justify-content: space-betwen;
+	justify-content: space-between;
 	line-height: 1.4;
 	margin: .5em 0;
 }
