@@ -48,3 +48,17 @@ ul.post_list li {
 ul.post_list .dt-published {
 	flex-shrink: 0;
 }
+
+.post-nav {
+	margin-top: 2.5em;
+	margin-bottom: 2.5em;
+	text-align: center;
+}
+
+.post-nav span {
+	padding: 0 5px;
+}
+
+.post-nav a:visited {
+	color: #3300FF;
+}
