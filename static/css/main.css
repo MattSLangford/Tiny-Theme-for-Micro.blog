@@ -23,7 +23,7 @@ nav a {
 	text-decoration: underline;
 }
 header h1 {
-	margin-top: 0;
+	margin-top: 0.2em;
 }
 header h1 a:hover {
 	color: #333;
