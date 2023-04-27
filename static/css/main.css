@@ -16,6 +16,10 @@ header h1 a, header h1 a:visited {
 	color: black;
 }
 
+header p {
+	margin-top: 0;
+}
+
 img.profile_photo {
 	border-radius: 80px;
 }
@@ -40,7 +44,6 @@ nav ul {
 nav ul li {
 	display: inline;
 	margin-right: 0.5em;
-	margin-left: 0.5em;
 }
 
 ul.post_list {
