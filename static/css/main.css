@@ -65,17 +65,13 @@ li.post-title a {
 	font-weight: bold;
 }
 
-li.post-title a:before {
+li.post-title a:after {
 	content: "full";
 	background: red;
-	padding: 1px;
-}
-
-li.post-truncated a:before {
-	content: "micro";
-	background: black;
+	padding: 1px 2px;
+	font-size: 0.8em;
 	color: white;
-	padding: 1px;
+	text-decoration: none;
 }
 
 .post-nav {
