@@ -65,13 +65,13 @@ li.post-title a {
 	font-weight: bold;
 }
 
-li.post-title:before {
+li.post-title a:before {
 	content: "full";
 	background: red;
 	padding: 1px;
 }
 
-li.post-truncated:before {
+li.post-truncated a:before {
 	content: "micro";
 	background: black;
 	color: white;
