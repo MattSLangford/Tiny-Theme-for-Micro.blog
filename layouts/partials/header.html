@@ -1,6 +1,16 @@
 <header class="site-header">
 	<a href="/"><img src="{{ .Site.Author.avatar }}" class="profile_photo" width="80" height="80"></a>
     <h1><a class="site-title" href="/">{{ .Site.Title }}</a></h1>
-    <p class="description">Husband to Kalena. Father to 2 beautiful kids. Pastor in Louisiana.</p>
-
+    <p class="description">Husband to Kalena, Dad to 2 beautiful kids. Pastor in Louisiana.</p>
+    <nav class="site-nav">
+    	<ul>
+		{{ range .Site.Menus.main }}
+			{{ if .Page.Params.redirect_url }}
+				<li><a class="page-link" href="{{ .Page.Params.redirect_url }}">{{ .Name }}</a></li>
+			{{ else }}
+				<li><a class="page-link" href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
+			{{ end }}
+		{{ end }}
+		</ul>
+    </nav>
 </header>
