@@ -65,15 +65,6 @@ li.post-title a {
 	font-weight: bold;
 }
 
-li.post-title a:after {
-	content: "full";
-	background: red;
-	padding: 1px 2px;
-	font-size: 0.8em;
-	color: white;
-	text-decoration: none;
-}
-
 .post-nav {
 	margin-top: 2.5em;
 	margin-bottom: 2.5em;
