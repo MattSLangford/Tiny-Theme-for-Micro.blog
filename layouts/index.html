@@ -6,7 +6,7 @@
                 {{ if .Title }}
                 	<li class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></li>
 				{{ else }}
-		            <li class="post-truncated"><a href="{{ .Permalink }}">{{ .Content | plainify | htmlUnescape | truncate 65 }}</a> {{ range .Params.photos }}📷{{ end }}<time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></li>
+		            <li class="post-truncated"><a href="{{ .Permalink }}">{{ .Content | plainify | htmlUnescape | truncate 65 }}</a><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></li>
 				{{ end }}             
         {{ end }}
         </ul> 
