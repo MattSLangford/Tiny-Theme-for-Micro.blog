@@ -1,3 +1,26 @@
+:root {
+	--text: #000000;
+	--link: #0000EE;
+	--link_visited: #551A8B;
+	--accent1: #333333;
+	--accent2: #666666;
+	--background: #ffffff;
+	--code: #e3e3e3;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text: #f8f8f2;
+		--link: #ff79c6;
+		--link_visited: #6272a4;
+		--accent1: #f8f8f2;
+		--accent2: #f8f8f2;
+		--background: #282a36;
+		--code: #44475a;
+	}
+}
+
 body {
 	max-width: 40em;
 	margin: 2em auto;
@@ -14,6 +37,7 @@ body {
 	font-size: 1.2em;
 	padding: 0 1em;
 	line-height: 1.6;
+	background-color: var(--background);
 }
 
 header {
@@ -23,7 +47,7 @@ header {
 header h1 a,
 header h1 a:visited {
 	text-decoration: none;
-	color: black;
+	color: var(--text);
 }
 
 header p {
@@ -31,11 +55,11 @@ header p {
 }
 
 a {
-	color: #0000EE;
+	color: var(--link);
 }
 
 a:visited {
-	color: #551A8B;
+	color: var(--link_visited)
 }
 
 img.profile_photo {
@@ -56,7 +80,7 @@ header h2 {
 }
 
 header h1 a:hover {
-	color: #333;
+	color: var(--accent1);
 }
 
 nav ul {
@@ -83,7 +107,7 @@ ul.post_list li {
 
 ul.post_list .dt-published {
 	flex-shrink: 0;
-	color: #666;
+	color: var(--accent2);
 	padding-left: 1em;
 }
 
@@ -102,11 +126,11 @@ li.post-title a {
 }
 
 .post-nav a:visited {
-	color: #3300FF;
+	color: var(--link);
 }
 
 .post-meta {
-	color: #666;
+	color: var(--accent2);
 }
 
 article img {
@@ -115,20 +139,20 @@ article img {
 }
 
 blockquote {
-	border-left: 2px solid #333;
+	border-left: 2px solid var(--accent1);
 	padding-left: 10px;
-	color: #333;
+	color: var(--accent1);
 }
 
 pre {
-	background: #e3e3e3;
+	background: var(--code);
 	padding: 5px;
 	overflow: auto;
 }
 
 hr {
 	margin: 2em;
-	border: 1px solid #666;
+	border: 1px solid var(--accent2);
 }
 
 sup a {
@@ -163,7 +187,7 @@ sup a {
 
 .microblog_time a,
 .microblog_time a:visited {
-	color: #666;
+	color: var(--accent2);
 	font-size: 0.8em;
 }
 
