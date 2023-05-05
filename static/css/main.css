@@ -20,12 +20,8 @@ header p {
 	margin-top: 0;
 }
 
-a {
-	color: #336699;
-}
-
-a:visited {
-	color: #003366;
+a, a:visited {
+	color: ;
 }
 
 img.profile_photo {
