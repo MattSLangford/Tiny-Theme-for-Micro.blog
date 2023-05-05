@@ -12,8 +12,8 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		--text: #f8f8f2;
-		--link: #ff79c6;
-		--link_visited: #bd93f9;
+		--link: #8be9fd;
+		--link_visited: #ff79c6;
 		--accent1: #f8f8f2;
 		--accent2: #f8f8f2;
 		--background: #282a36;
