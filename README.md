@@ -8,5 +8,5 @@ For now, you can install this theme by adding a new theme in Micro.blog and past
 You can demo the current version of this theme by visiting [mattlangford.com](https://mattlangford.com).
 
 ### Screenshots
-![Light Mode](#)
-![Dark Mode](#)
+![Light Mode](https://github.com/MattSLangford/Tiny-Theme-for-Micro.blog/blob/main/images/screenshot-dark.png)
+![Dark Mode](https://github.com/MattSLangford/Tiny-Theme-for-Micro.blog/blob/main/images/screenshot-light.png)
