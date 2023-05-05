@@ -23,9 +23,9 @@
   </title>
 
   <meta name="description" content="{{ .Summary }}">
-
+  <meta name="theme-color" content="#0000EE" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#282a36" media="(prefers-color-scheme: dark)">
   <link rel="shortcut icon" href="https://micro.blog/{{ .Site.Author.username }}/favicon.png" type="image/x-icon" />
-  <link rel="icon" type="image/x-icon" href="https://micro.blog/{{ .Site.Author.username }}/favicon.png">
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   <link rel="stylesheet" href="{{ "custom.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   <link rel="canonical" href="{{ .Permalink }}">
