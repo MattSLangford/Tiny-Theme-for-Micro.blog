@@ -20,6 +20,14 @@ header p {
 	margin-top: 0;
 }
 
+a {
+	color: #336699;
+}
+
+a:visited {
+	color: #003366;
+}
+
 img.profile_photo {
 	border-radius: 80px;
 }
