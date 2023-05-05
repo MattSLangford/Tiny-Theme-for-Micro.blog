@@ -199,4 +199,7 @@ footer {
 
 footer .custom_footer {
 	font-size: 0.8em;
+	max-width: 500px;
+	margin: 0 auto;
+	color: var(--accent2);
 }
