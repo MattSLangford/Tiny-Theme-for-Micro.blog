@@ -1,7 +1,16 @@
 body {
 	max-width: 40em;
 	margin: 2em auto;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-family: -apple-system,
+		BlinkMacSystemFont,
+		"Segoe UI",
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		"Apple Color Emoji",
+		"Segoe UI Emoji",
+		"Segoe UI Symbol";
 	font-size: 1.2em;
 	padding: 0 1em;
 	line-height: 1.6;
@@ -11,7 +20,8 @@ header {
 	margin-bottom: 2em;
 }
 
-header h1 a, header h1 a:visited {
+header h1 a,
+header h1 a:visited {
 	text-decoration: none;
 	color: black;
 }
@@ -109,32 +119,40 @@ blockquote {
 	padding-left: 10px;
 	color: #333;
 }
+
 pre {
 	background: #e3e3e3;
 	padding: 5px;
 	overflow: auto;
 }
+
 hr {
-	margin 2em:
+	margin: 2em;
 	border: 1px solid #666;
 }
+
 sup a {
 	text-decoration: none;
 }
+
 .footnote-backref {
 	text-decoration: none;
 }
+
 .microblog_conversation {
 	max-width: 600px;
 	margin-top: 3em;
 	margin-bottom: 2em;
 }
+
 .microblog_post {
 	margin-bottom: 2em;
 }
+
 .microblog_user {
 	font-weight: bold;
 }
+
 .microblog_user img {
 	vertical-align: middle;
 	width: 40px;
@@ -142,7 +160,9 @@ sup a {
 	border-radius: 40px;
 	max-width: 40px !important;
 }
-.microblog_time a, .microblog_time a:visited {
+
+.microblog_time a,
+.microblog_time a:visited {
 	color: #666;
 	font-size: 0.8em;
 }
