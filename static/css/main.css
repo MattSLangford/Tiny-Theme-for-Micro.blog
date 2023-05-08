@@ -160,6 +160,7 @@ li.post-title a {
 article img {
 	width: 100%;
 	height: auto;
+	border-radius: 3px;
 }
 
 blockquote {
@@ -220,9 +221,17 @@ footer {
 	margin-top: 2em;
 }
 
-footer .custom_footer {
+footer .custom_footer,
+footer .meta
+footer .ad-aff
+{
 	font-size: 0.8em;
 	max-width: 500px;
 	margin: 0 auto;
 	color: var(--accent2);
+}
+
+footer .ad-aff {
+	padding: 10px;
+	border: 1px solid var(--link);
 }
