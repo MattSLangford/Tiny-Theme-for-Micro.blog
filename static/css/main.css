@@ -79,6 +79,10 @@ img.profile_photo {
 	border-radius: 80px;
 }
 
+img.profile_photo:hover {
+	opacity: 0.8;
+}
+
 nav a,
 nav a:visited,
 nav a:hover,
