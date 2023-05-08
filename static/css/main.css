@@ -62,6 +62,10 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
 a:visited {
 	color: var(--link_visited)
 }
@@ -70,7 +74,9 @@ img.profile_photo {
 	border-radius: 80px;
 }
 
-nav a, nav a:visited {
+nav a,
+nav a:visited,
+nav a:hover {
 	text-decoration: none;
 	padding: 5px 10px;
 	background: var(--link);
@@ -78,6 +84,10 @@ nav a, nav a:visited {
 	border-radius: 3px;
 	font-size: 0.8em;
 
+}
+
+nav a:hover {
+	opacity: 0.8;
 }
 
 header h1 {
@@ -100,7 +110,7 @@ nav ul {
 
 nav ul li {
 	display: inline;
-	margin-right: 0.5em;
+	margin-right: 0.2em;
 }
 
 ul.post_list {
