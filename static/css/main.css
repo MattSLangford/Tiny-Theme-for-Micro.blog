@@ -73,7 +73,7 @@ img.profile_photo {
 nav a {
 	text-decoration: none;
 	padding: 5px 10px;
-	background: var(--link)
+	background: var(--link);
 	color: var(--button-text);
 }
 
