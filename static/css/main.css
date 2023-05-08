@@ -221,10 +221,18 @@ footer {
 	margin-top: 2em;
 }
 
-footer .custom_footer,
+footer .custom_footer
 {
 	font-size: 0.8em;
 	max-width: 500px;
 	margin: 0 auto;
 	color: var(--accent2);
+}
+
+.custom_footer span {
+	display: block;
+	padding: 10px;
+	background: var(--code);
+	border-radius: 3px;
+	margin-bottom: 2em;
 }
