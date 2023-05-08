@@ -76,7 +76,9 @@ img.profile_photo {
 
 nav a,
 nav a:visited,
-nav a:hover {
+nav a:hover,
+a.conversation-on-mb
+{
 	text-decoration: none;
 	padding: 5px 10px;
 	background: var(--link);
@@ -86,7 +88,9 @@ nav a:hover {
 
 }
 
-nav a:hover {
+nav a:hover,
+a.conversation-on-mb:hover
+ {
 	opacity: 0.8;
 }
 
