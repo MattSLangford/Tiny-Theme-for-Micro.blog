@@ -53,6 +53,11 @@ header h1 a:visited {
 	color: var(--text);
 }
 
+header h1 a:hover {
+	color: var(--accent1);
+	text-decoration: none;
+}
+
 header p {
 	margin-top: 0;
 }
@@ -101,10 +106,6 @@ header h1 {
 
 header h2 {
 	margin-bottom: 0;
-}
-
-header h1 a:hover {
-	color: var(--accent1);
 }
 
 nav ul {
