@@ -70,11 +70,14 @@ img.profile_photo {
 	border-radius: 80px;
 }
 
-nav a {
+nav a, nav a:visited {
 	text-decoration: none;
 	padding: 5px 10px;
 	background: var(--link);
 	color: var(--button-text);
+	border-radius: 3px;
+	font-size: 0.8em;
+
 }
 
 header h1 {
