@@ -74,7 +74,13 @@ a:hover {
 a:visited {
 	color: var(--link_visited)
 }
-
+a.post-date {
+	font-size: 0.8em;
+	
+}
+.e-content p:first-of-type {
+	margin-top: 0;
+}
 img.profile_photo {
 	border-radius: 80px;
 }
