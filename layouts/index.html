@@ -7,11 +7,11 @@
                 {{ if .Title }}
                 	<h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
                     <div class="e-content">
-                        <p>{{ .Content }}</p>
+                        {{ .Content }}
                     </div>
 				{{ else }}
                 <div class="e-content">
-		            <p>{{ .Content }}</p>
+		            {{ .Content }}
                 </div>
 				{{ end }}
         {{ end }}
