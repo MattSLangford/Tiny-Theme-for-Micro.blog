@@ -78,10 +78,14 @@ a:visited {
 	color: var(--link_visited)
 }
 
-a.post-date, span.post-date {
+a.post-date {
 	font-size: 0.8em;
 	color: var(--link);
 	text-decoration: none;
+}
+
+span.post-date {
+	font-size: 0.8em;
 }
 
 a.post-date:hover {
