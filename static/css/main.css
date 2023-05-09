@@ -80,7 +80,7 @@ a:visited {
 
 a.post-date {
 	font-size: 0.8em;
-	color: var(--accent1);
+	color: var(--link);
 	text-decoration: none;
 }
 
