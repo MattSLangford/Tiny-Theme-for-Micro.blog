@@ -78,7 +78,7 @@ a:visited {
 	color: var(--link_visited)
 }
 
-a.post-date {
+a.post-date, span.post-date {
 	font-size: 0.8em;
 	color: var(--link);
 	text-decoration: none;
