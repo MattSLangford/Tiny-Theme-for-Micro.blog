@@ -174,7 +174,7 @@ article img,
 }
 
 blockquote {
-	border-left: 2px solid var(--accent1);
+	border-left: 2px solid var(--link);
 	padding-left: 10px;
 	color: var(--accent1);
 }
@@ -187,7 +187,7 @@ pre {
 
 hr {
 	margin: 2em;
-	border: 1px solid var(--accent2);
+	border: 1px solid var(--link);
 }
 
 sup a {
