@@ -46,7 +46,9 @@ body {
 header {
 	margin-bottom: 2em;
 }
-
+header .post-header {
+	margin-bottom: 0;
+}
 header h1 a,
 header h1 a:visited {
 	text-decoration: none;
