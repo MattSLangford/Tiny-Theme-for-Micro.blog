@@ -1,15 +1,16 @@
 {{ define "main" }}
 <div class="posts h-feed">
-	    <ul class="post_list">
+	    <div class="post_list">
         {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 20) }}
 		{{ range $paginator.Pages  }}
+        <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>
                 {{ if .Title }}
-                	<li class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></li>
+                	<h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
 				{{ else }}
-		            <li class="post-truncated"><a href="{{ .Permalink }}">{{ .Content | plainify | htmlUnescape | truncate 65 }}</a><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></li>
+		            <p>{{ .Content }}</p>
 				{{ end }}
         {{ end }}
-        </ul>
+        </div>
 </div>
 <div class="post-nav">
     {{ if $paginator.HasPrev }}

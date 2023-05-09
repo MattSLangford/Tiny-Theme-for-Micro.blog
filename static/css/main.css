@@ -122,28 +122,6 @@ nav ul li {
 	margin-right: 0.2em;
 }
 
-ul.post_list {
-	list-style-type: none;
-	padding: 0;
-}
-
-ul.post_list li {
-	display: flex;
-	justify-content: space-between;
-	line-height: 1.4;
-	margin: .8em 0;
-}
-
-ul.post_list .dt-published {
-	flex-shrink: 0;
-	color: var(--accent2);
-	padding-left: 1em;
-}
-
-li.post-title a {
-	font-weight: bold;
-}
-
 .post-nav {
 	margin-top: 2.5em;
 	margin-bottom: 2.5em;
