@@ -46,9 +46,11 @@ body {
 header {
 	margin-bottom: 2em;
 }
+
 header .post-header {
-	margin-bottom: 0; 
+	margin-bottom: 0;
 }
+
 header h1 a,
 header h1 a:visited {
 	text-decoration: none;
@@ -76,10 +78,12 @@ a:hover {
 a:visited {
 	color: var(--link_visited)
 }
+
 a.post-date {
 	font-size: 0.8em;
 	color: var(--accent1);
 }
+
 a.post-date:hover {
 	text-decoration: none;
 }
@@ -87,9 +91,12 @@ a.post-date:hover {
 .e-content {
 	margin-bottom: 3em;
 }
-.e-content p:first-of-type, article p:first-of-type {
+
+.e-content p:first-of-type,
+article p:first-of-type {
 	margin-top: 0;
 }
+
 img.profile_photo {
 	border-radius: 80px;
 }
@@ -101,8 +108,7 @@ img.profile_photo:hover {
 nav a,
 nav a:visited,
 nav a:hover,
-a.conversation-on-mb
-{
+a.conversation-on-mb {
 	text-decoration: none;
 	padding: 5px 10px;
 	background: var(--link);
@@ -113,8 +119,7 @@ a.conversation-on-mb
 }
 
 nav a:hover,
-a.conversation-on-mb:hover
- {
+a.conversation-on-mb:hover {
 	opacity: 0.8;
 }
 
@@ -155,7 +160,8 @@ nav ul li {
 	color: var(--accent2);
 }
 
-article img, .e-content img {
+article img,
+.e-content img {
 	width: 100%;
 	height: auto;
 	border-radius: 3px;
@@ -219,8 +225,7 @@ footer {
 	margin-top: 2em;
 }
 
-footer .custom_footer
-{
+footer .custom_footer {
 	font-size: 0.8em;
 	max-width: 500px;
 	margin: 0 auto;
