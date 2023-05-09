@@ -117,7 +117,7 @@ a.conversation-on-mb {
 	padding: 5px 10px;
 	background: var(--link);
 	color: var(--button-text);
-	border-radius: 3px;
+	border-radius: 5px;
 }
 
 nav a:hover,
@@ -166,7 +166,7 @@ article img,
 .e-content img {
 	width: 100%;
 	height: auto;
-	border-radius: 3px;
+	border-radius: 5px;
 }
 
 blockquote {
@@ -203,7 +203,7 @@ sup a {
 	margin-bottom: 2em;
 	padding: 15px;
 	border: 1px solid var(--code);
-	border-radius: 3px;
+	border-radius: 5px;
 }
 
 .microblog_user {
@@ -241,6 +241,6 @@ footer .custom_footer {
 	display: block;
 	padding: 10px;
 	background: var(--code);
-	border-radius: 3px;
+	border-radius: 5px;
 	margin-bottom: 2em;
 }
