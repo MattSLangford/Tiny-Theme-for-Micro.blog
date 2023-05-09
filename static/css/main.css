@@ -222,6 +222,7 @@ sup a {
 .microblog_time a:visited {
 	color: var(--accent2);
 	font-size: 0.8em;
+	text-decoration: none;
 }
 
 footer {
