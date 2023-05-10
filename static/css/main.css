@@ -115,14 +115,15 @@ nav a:hover,
 a.conversation-on-mb {
 	text-decoration: none;
 	padding: 5px 10px;
-	background: var(--link);
-	color: var(--button-text);
+	border: 1px solid var(--link);
+	color: var(--link);
 	border-radius: 5px;
 }
 
 nav a:hover,
 a.conversation-on-mb:hover {
-	opacity: 0.8;
+	background: var(--link);
+	color: var(--button-text);
 }
 
 header h1 {
