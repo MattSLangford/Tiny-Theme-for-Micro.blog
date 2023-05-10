@@ -195,7 +195,7 @@ hr {
 }
 
 hr::before {
-	content: "***";
+	content: "•••••";
 	display: block;
 	color: var(--link);
 }
@@ -246,8 +246,6 @@ footer {
 
 footer .custom_footer {
 	font-size: 0.8em;
-	max-width: 650px;
-	margin: 0 auto;
 	color: var(--accent2);
 }
 
