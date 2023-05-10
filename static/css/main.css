@@ -103,11 +103,6 @@ article p:first-of-type {
 
 img.profile_photo {
 	border-radius: 80px;
-	transition: transform 1s ease-in-out;
-}
-
-img.profile_photo:hover {
-	transform: rotate(360deg);
 }
 
 nav a,
