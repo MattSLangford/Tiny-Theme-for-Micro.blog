@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
 
-  {{ partial "head.html" . }}
+{{ partial "head.html" . }}
 
-  <body>
-    {{ partial "header.html" . }}
+<body>
+  {{ partial "header.html" . }}
 
-    <div class="page-content">
-      <div class="wrapper">
-		{{ block "main" . }}{{ end }}
-      </div>
+  <div class="page-content">
+    <div class="wrapper">
+      {{ block "main" . }}{{ end }}
     </div>
+  </div>
+  <hr>
+  {{ partial "footer.html" . }}
 
-    {{ partial "footer.html" . }}
+  {{ range .Site.Params.plugins_js }}
+  <script src="{{ . }}"></script>
+  {{ end }}
+</body>
 
-		{{ range .Site.Params.plugins_js }}
-			<script src="{{ . }}"></script>
-		{{ end }}
-  </body>
 </html>
