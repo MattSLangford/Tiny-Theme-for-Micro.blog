@@ -118,6 +118,7 @@ a.conversation-on-mb {
 	border: 1px solid var(--link);
 	color: var(--link);
 	border-radius: 5px;
+	font-size: 0.9em;
 }
 
 nav a:hover,
