@@ -132,7 +132,9 @@ header h1 {
 	margin-bottom: 0.2em;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 	line-height: 1.2em;
 }
 
@@ -188,8 +190,14 @@ pre {
 }
 
 hr {
-	margin: 2em;
-	border: 1px solid var(--link);
+	margin: 2em 0;
+	border: none;
+}
+
+hr::before {
+	content: "***";
+	display: block;
+	color: var(--link);
 }
 
 sup a {
