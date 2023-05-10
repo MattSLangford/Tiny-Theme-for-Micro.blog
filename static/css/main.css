@@ -103,11 +103,10 @@ article p:first-of-type {
 
 img.profile_photo {
 	border-radius: 80px;
-	transition: transform 0.5s ease-in-out;
+	transition: transform 1s ease-in-out;
 }
 
 img.profile_photo:hover {
-	opacity: 0.8;
 	transform: rotate(360deg);
 }
 
