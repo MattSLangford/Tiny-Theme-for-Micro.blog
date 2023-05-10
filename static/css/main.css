@@ -156,7 +156,10 @@ nav ul li {
 .post-nav {
 	margin-top: 2.5em;
 	margin-bottom: 2.5em;
-	text-align: center;
+}
+
+.post-nav span.next {
+	float: right;
 }
 
 .post-nav span {
