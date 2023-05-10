@@ -1,32 +1,34 @@
 {{ define "main" }}
 <div class="posts h-feed">
-	    <div class="post_list">
+    <div class="post_list">
         {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 20) }}
-		{{ range $paginator.Pages  }}
-        <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>
-                {{ if .Title }}
-                	<h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                    <div class="e-content">
-                        {{ .Content }}
-                    </div>
-				{{ else }}
-                <div class="e-content">
-		            {{ .Content }}
-                </div>
-				{{ end }}
-        {{ end }}
+        {{ range $paginator.Pages  }}
+        <div class="post-preview">
+            <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>
+            {{ if .Title }}
+            <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <div class="e-content">
+                {{ .Content }}
+            </div>
+            {{ else }}
+            <div class="e-content">
+                {{ .Content }}
+            </div>
+            {{ end }}
         </div>
+        {{ end }}
+    </div>
 </div>
 <div class="post-nav">
     {{ if $paginator.HasPrev }}
-        <span class="prev">
-			<a href="{{ $paginator.Prev.URL }}" title="Previous Page"><span class="arrow">← Newer Posts</span></a>
-        </span>
+    <span class="prev">
+        <a href="{{ $paginator.Prev.URL }}" title="Previous Page"><span class="arrow">← Newer Posts</span></a>
+    </span>
     {{ end }}
     {{ if $paginator.HasNext }}
-        <span class="next">
-            <a href="{{ $paginator.Next.URL }}"><span class="arrow">Older Posts →</span></a>
-        </span>
+    <span class="next">
+        <a href="{{ $paginator.Next.URL }}"><span class="arrow">Older Posts →</span></a>
+    </span>
     {{ end }}
 </div>
 {{ end }}
