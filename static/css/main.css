@@ -245,6 +245,10 @@ sup a {
 	text-decoration: none;
 }
 
+.photos-grid-container {
+	grid-column-gap: 5px; /* Fixes Micro.blog spacing bug */
+}
+
 footer {
 	margin-top: 2em;
 	text-align: center;
