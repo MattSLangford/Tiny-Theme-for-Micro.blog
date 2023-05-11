@@ -22,6 +22,13 @@ The Tiny Theme uses Micro.blog's default Custom Footer options. In the Micro.blo
 #### Design Changes
 To tweak the design, use the "Edit CSS" option in the "Design" section of your Micro.blog dashboard. If you're familiar with CSS, you can dive right in. If not, here are a few example snippets to get you started.
 
+##### Overall Site Size
+While you can dig way into the CSS and individually manipulate each individual element on its own, I've created this theme to dynamically alter the entire design based on the font-size. By default, the theme uses a font-size of 18px. While you can change that to any value, I suggested keeping it between 14-22px. Copy the following code and choose your size.
+
+```
+body {font-size: 18px;}
+```
+
 ##### Remove Categories from Single Posts
 ```
 ul.post-tags {display: none;}
