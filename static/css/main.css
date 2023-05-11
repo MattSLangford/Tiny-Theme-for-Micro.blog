@@ -198,10 +198,11 @@ ul.post-list a.u-url {
 }
 
 blockquote {
-	padding: 10px;
+	padding: 1em;
 	background: var(--blockquote);
 	border-radius: 5px;
 	font-size: 0.9em;
+	margin: 1em;
 }
 
 blockquote p:last-of-type {
@@ -210,7 +211,7 @@ blockquote p:last-of-type {
 
 pre {
 	background: var(--code);
-	padding: 5px;
+	padding: 1em;
 	overflow: auto;
 	border-radius: 5px;
 }
@@ -241,7 +242,7 @@ sup a {
 
 .microblog_post {
 	margin-bottom: 2em;
-	padding: 15px;
+	padding: 1em;
 	border: 1px solid var(--code);
 	border-radius: 5px;
 }
@@ -275,12 +276,8 @@ footer .custom_footer {
 	color: var(--accent2);
 }
 
-.custom_footer span {
-	display: block;
-	padding: 10px;
-	background: var(--code);
-	border-radius: 5px;
-	margin-bottom: 2em;
+.full-archives {
+	overflow-wrap: anywhere;
 }
 
 /* OVERRIDING DEFAULT MICROBLOG CSS. Using !important isn't ideal, but it's the most effective for these things. */
