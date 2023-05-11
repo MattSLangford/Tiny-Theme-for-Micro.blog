@@ -249,6 +249,11 @@ sup a {
 	grid-column-gap: 5px !important; /* Fixes Micro.blog spacing bug */
 }
 
+form input {
+	border: 1px solid var(--link);
+	border-radius: 5px;
+}
+
 footer {
 	margin-top: 2em;
 	text-align: center;
