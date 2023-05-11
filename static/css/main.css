@@ -131,7 +131,8 @@ a.reply-by-email {
 }
 
 nav a:hover,
-a.conversation-on-mb:hover {
+a.conversation-on-mb:hover,
+a.reply-by-email:hover {
 	background: var(--link);
 	color: var(--button-text);
 }
