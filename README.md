@@ -9,7 +9,7 @@ A custom theme for Micro.blog. It includes micro.blog specific features and an a
 You can demo the current version of this theme by visiting [mattlangford.com](https://mattlangford.com).
 
 ### Installation
-For now, you can install this theme by using the repo URL and cloning it using Micro.blog. Much easier way coming soon.
+This theme is now listed in the plugins directory of Micro.blog. You can install with one click there.
 
 ### Required Settings
 Once the theme is installed and active on your site, navigate to the theme settings and add your short bio.
