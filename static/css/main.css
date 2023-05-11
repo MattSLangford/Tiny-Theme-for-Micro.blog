@@ -107,12 +107,14 @@ img.profile_photo {
 	border-radius: 80px;
 }
 
-nav ul, ul.reply-buttons {
+nav ul,
+ul.reply-buttons {
 	list-style-type: none;
 	padding: 0;
 }
 
-nav ul li, ul.reply-buttons li {
+nav ul li,
+ul.reply-buttons li {
 	display: inline;
 	margin-right: 0.2em;
 }
@@ -245,15 +247,6 @@ sup a {
 	text-decoration: none;
 }
 
-.photos-grid-container {
-	grid-column-gap: 5px !important; /* Fixes Micro.blog spacing bug */
-}
-
-.field {
-	border: 1px solid var(--link);
-	border-radius: 5px;
-}
-
 footer {
 	margin-top: 2em;
 	text-align: center;
@@ -270,4 +263,14 @@ footer .custom_footer {
 	background: var(--code);
 	border-radius: 5px;
 	margin-bottom: 2em;
+}
+
+/* OVERRIDING DEFAULT MICROBLOG CSS. Using !important isn't ideal, but it's the most effective for these things. */
+.photos-grid-container {
+	grid-column-gap: 5px !important;
+}
+
+.field {
+	border: 1px solid var(--link) !important;
+	border-radius: 5px !important;
 }
