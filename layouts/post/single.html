@@ -12,6 +12,14 @@
     {{ .Content }}
   </article>
 
+  {{ if .Params.categories }}
+  <ul class="post-tags">
+    {{ range .Params.categories }} {{ $href := print (absURL "categories/") (urlize .) }}
+    <li><a href="{{ $href }}">#{{ . }}</a></li>
+    {{ end }}
+  </ul>
+  {{ end }}
+
 </div>
 {{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") }}
 <ul class="reply-buttons">
