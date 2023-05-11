@@ -179,6 +179,11 @@ article img,
 	border-radius: 5px;
 }
 
+ul.post-tags li {
+	display: inline;
+	font-size: 0.9em;
+}
+
 blockquote {
 	padding: 10px;
 	background: var(--blockquote);
