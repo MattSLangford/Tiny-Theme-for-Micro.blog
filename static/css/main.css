@@ -110,7 +110,8 @@ img.profile_photo {
 nav a,
 nav a:visited,
 nav a:hover,
-a.conversation-on-mb {
+a.conversation-on-mb,
+a.reply-by-email {
 	text-decoration: none;
 	padding: 5px 10px;
 	border: 1px solid var(--link);
