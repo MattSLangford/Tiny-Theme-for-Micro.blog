@@ -14,6 +14,9 @@ For now, you can install this theme by using the repo URL and cloning it using M
 ### Required Settings
 Once the theme is installed and active on your site, navigate to the theme settings and add your short bio.
 
+### Support
+If you're having any trouble, feel free to [contact me](https://mattlangford.com/contact/).
+
 ### Modifications
 
 #### Adding/Editing the Footer
