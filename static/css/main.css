@@ -7,6 +7,7 @@
 	--background: #ffffff;
 	--code: #e3e3e3;
 	--button-text: #ffffff;
+	--blockquote: #fffee0;
 }
 
 /* Dark mode */
@@ -20,6 +21,7 @@
 		--background: #282a36;
 		--code: #44475a;
 		--button-text: #282a36;
+		--blockquote: #44475a;
 	}
 }
 
@@ -36,7 +38,7 @@ body {
 		"Apple Color Emoji",
 		"Segoe UI Emoji",
 		"Segoe UI Symbol";
-	font-size: 1.2em;
+	font-size: 18px;
 	padding: 0 1em;
 	line-height: 1.6;
 	background-color: var(--background);
@@ -174,15 +176,16 @@ article img,
 }
 
 blockquote {
-	border-left: 2px solid var(--link);
-	padding-left: 10px;
-	color: var(--accent1);
+	padding: 10px;
+	background: var(--blockquote);
+	border-radius: 5px;
 }
 
 pre {
 	background: var(--code);
 	padding: 5px;
 	overflow: auto;
+	border-radius: 5px;
 }
 
 hr {
