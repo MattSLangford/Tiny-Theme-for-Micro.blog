@@ -21,3 +21,9 @@ The Tiny Theme uses Micro.blog's default Custom Footer options. In the Micro.blo
 
 #### Design Changes
 To tweak the design, use the "Edit CSS" option in the "Design" section of your Micro.blog dashboard. If you're familiar with CSS, you can dive right in. If not, I'll be adding a few example snippets below soon.
+
+##### Remove Categories from Single Posts
+
+```
+ul.post-tags {display: none;}
+```
