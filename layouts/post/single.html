@@ -21,6 +21,7 @@
 {{ if templates.Exists "partials/conversation-link.html" }}
   <li>{{ partial "conversation-link.html" . }}</li>
 {{ end }}
+{{ end }}
 </ul>
 
 {{ if .Site.Params.include_conversation }}
