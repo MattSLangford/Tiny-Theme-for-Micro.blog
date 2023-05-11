@@ -184,8 +184,17 @@ ul.post-tags li {
 	font-size: 0.9em;
 }
 
-ul.post-tags {
+ul.post-tags,
+ul.post-list {
 	padding-left: 0;
+}
+
+ul.post-list {
+	list-style-type: none;
+}
+
+ul.post-list a.u-url {
+	text-decoration: none;
 }
 
 blockquote {

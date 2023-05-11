@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="home h-feed">
-
+<h3>Recent Replies</h3>
   <ul class="post-list">
 	{{ if .Site.Params.paginate_replies }}
 		{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
@@ -11,7 +11,7 @@
 				<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
 			{{ end }}
 
-			<a href="{{ .Permalink }}" class="u-url"><span class="post-meta"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time></span></a>
+			<a href="{{ .Permalink }}" class="u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>
 
 			<div class="e-content">
 				{{ .Content }}
@@ -35,8 +35,5 @@
 		{{ end }}
     {{ end }}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "feed.xml" | absURL }}">via RSS</a></p>
-
 </div>
 {{ end }}
