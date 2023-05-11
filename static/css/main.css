@@ -246,7 +246,7 @@ sup a {
 }
 
 .photos-grid-container {
-	grid-column-gap: 5px; /* Fixes Micro.blog spacing bug */
+	grid-column-gap: 5px !important; /* Fixes Micro.blog spacing bug */
 }
 
 footer {
