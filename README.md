@@ -2,6 +2,8 @@
 A custom theme for Micro.blog. It includes micro.blog specific features and an automatic dark mode (loosely based on Dracula). It has no additional scripts, no custom fonts, and only 1 media query (for dark mode). It has full support for default comments, the reply by email plugin, and the conversation on Micro.Blog plugin.
 
 ### Screenshots
+![Tiny Theme Light](https://github.com/MattSLangford/Tiny-Theme-for-Micro.blog/blob/main/screenshot.png)
+![Tiny Theme Dark](https://github.com/MattSLangford/Tiny-Theme-for-Micro.blog/blob/main/screenshot2.png)
 
 ### Demo
 You can demo the current version of this theme by visiting [mattlangford.com](https://mattlangford.com).
