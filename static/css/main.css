@@ -184,6 +184,10 @@ ul.post-tags li {
 	font-size: 0.9em;
 }
 
+ul.post-tags {
+	padding-left: 0;
+}
+
 blockquote {
 	padding: 10px;
 	background: var(--blockquote);
