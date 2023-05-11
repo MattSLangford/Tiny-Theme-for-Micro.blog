@@ -179,6 +179,11 @@ blockquote {
 	padding: 10px;
 	background: var(--blockquote);
 	border-radius: 5px;
+	font-size: 0.9em;
+}
+
+blockquote p:last-of-type {
+	margin-bottom: 0;
 }
 
 pre {
