@@ -1,0 +1,28 @@
+{{ define "main" }}
+<header class="post-header">
+	<h2 class="post-title">Archive</h2>
+</header>
+{{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+{{ if gt (len $list) 0 }}
+<div class="archive-categories">
+	<h3>Categories</h3>
+	<ul>
+		{{ range $list }}
+		<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+		{{ end }}
+	</ul>
+</div>
+{{ end }}
+<div class="full-archives">
+	{{ $list := (where .Site.Pages "Type" "post") }}
+	{{ range $list }}
+
+	<p class="h-entry">
+		<a href="{{ .Permalink }}" class="u-url"><span class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05-0700" }}">{{ .Date.Format "Jan 2, 2006" }}</span></a>:
+		<span class="p-name"><b>{{ .Title }}</b></span>
+		<span class="p-summary">{{ .Summary | truncate 150 }}</span>
+	</p>
+
+	{{ end }}
+</div>
+{{ end }}
