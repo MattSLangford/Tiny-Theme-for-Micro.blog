@@ -107,6 +107,16 @@ img.profile_photo {
 	border-radius: 80px;
 }
 
+nav ul, ul.reply-buttons {
+	list-style-type: none;
+	padding: 0;
+}
+
+nav ul li, ul.reply-buttons li {
+	display: inline;
+	margin-right: 0.2em;
+}
+
 nav a,
 nav a:visited,
 nav a:hover,
@@ -139,16 +149,6 @@ h3 {
 
 h2 {
 	margin-top: 0;
-}
-
-nav ul {
-	list-style-type: none;
-	padding: 0;
-}
-
-nav ul li {
-	display: inline;
-	margin-right: 0.2em;
 }
 
 .post-nav {

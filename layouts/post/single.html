@@ -13,13 +13,15 @@
   </article>
 
 </div>
-
+{{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") }}
+<ul class="reply-buttons">
 {{ if templates.Exists "partials/reply-by-email.html" }}
-    {{ partial "reply-by-email.html" . }}
+    <li>{{ partial "reply-by-email.html" . }}</li>
 {{ end }}
 {{ if templates.Exists "partials/conversation-link.html" }}
-  {{ partial "conversation-link.html" . }}
+  <li>{{ partial "conversation-link.html" . }}</li>
 {{ end }}
+</ul>
 
 {{ if .Site.Params.include_conversation }}
 <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
