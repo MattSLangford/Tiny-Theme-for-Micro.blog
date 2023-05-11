@@ -14,6 +14,7 @@
 </div>
 {{ end }}
 <div class="full-archives">
+	<h3>Full Post List</h3>
 	{{ $list := (where .Site.Pages "Type" "post") }}
 	{{ range $list }}
 
