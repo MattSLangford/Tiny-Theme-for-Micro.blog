@@ -1,5 +1,12 @@
 {
 	"version": "1.0",
 	"title": "Tiny theme",
-	"description": "Changes your Micro.blog to use the Tiny theme."
+	"description": "Tiny theme for Micro.blog. Fast and easy to customize."
+	"fields": [
+		{
+			"field": "params.bio",
+			"label": "Bio",
+			"placeholder": "Enter your short bio here"
+		}
+	]
 }
