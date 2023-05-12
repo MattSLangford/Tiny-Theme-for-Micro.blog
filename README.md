@@ -22,7 +22,7 @@ Out-of-the-box, this theme supports these Micro.blog plugins and options:
 [View the Demo](https://www.mattlangford.com)
 
 ### Screenshot
-![Tiny Theme Screenshot GIF](https://raw.github.com/MattSLangford/Tiny-Theme-for-Micro.blog/blob/main/screenshot.gif?raw=true)
+![Tiny Theme Screenshot GIF](https://github.com/MattSLangford/Tiny-Theme-for-Micro.blog/blob/main/screenshot.gif?raw=true)
 
 ### Installation
 This theme is now listed in the plugins directory of Micro.blog. You can install with one click there. Within Micro.blog, you can instead clone this repo if you prefer (choose plugin instead of theme).
