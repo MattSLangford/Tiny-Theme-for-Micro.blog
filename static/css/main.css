@@ -1,7 +1,7 @@
 :root {
 	--text: #000000;
 	--link: #0000EE;
-	--link_visited: #551A8B;
+	--link_visited: #0000EE;
 	--accent1: #333333;
 	--accent2: #666666;
 	--background: #ffffff;
@@ -15,7 +15,7 @@
 	:root {
 		--text: #f8f8f2;
 		--link: #8be9fd;
-		--link_visited: #ff79c6;
+		--link_visited: ##8be9fd;
 		--accent1: #f8f8f2;
 		--accent2: #f8f8f2;
 		--background: #282a36;
@@ -117,6 +117,7 @@ nav ul li,
 ul.reply-buttons li {
 	display: inline;
 	margin-right: 0.2em;
+	line-height: 2em;
 }
 
 nav a,
