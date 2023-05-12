@@ -55,6 +55,11 @@ If you're having any trouble, feel free to [contact me](https://mattlangford.com
 
 ### Changelog
 
+#### 1.0.6
+- New fix for horizontal scrolling issue with long strings of text
+- Fix for text wrap issue in nav bar for site with many nav links
+- Fixed typo in CSS variables
+
 #### 1.0.5
 - Fixed alt text for logo (profile photo) in header
 
