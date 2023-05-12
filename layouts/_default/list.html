@@ -17,8 +17,17 @@
       </li>
     {{ end }}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "feed.xml" | absURL }}">via RSS</a></p>
-
+</div>
+<div class="post-nav">
+    {{ if $paginator.HasPrev }}
+    <span class="prev">
+        <a href="{{ $paginator.Prev.URL }}" title="Previous Page"><span class="arrow">← Newer Posts</span></a>
+    </span>
+    {{ end }}
+    {{ if $paginator.HasNext }}
+    <span class="next">
+        <a href="{{ $paginator.Next.URL }}"><span class="arrow">Older Posts →</span></a>
+    </span>
+    {{ end }}
 </div>
 {{ end }}
