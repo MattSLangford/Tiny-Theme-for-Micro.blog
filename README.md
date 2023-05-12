@@ -56,6 +56,9 @@ If you're having any trouble, feel free to [contact me](https://mattlangford.com
 
 ### Changelog
 
+#### 1.0.4
+- Added pagination to category pages
+
 #### 1.0.3
 - Reformatted Readme
 - Removed specialized styling for visited links (still available in custom)
