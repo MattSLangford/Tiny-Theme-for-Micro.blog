@@ -55,6 +55,9 @@ If you're having any trouble, feel free to [contact me](https://mattlangford.com
 
 ### Changelog
 
+#### 1.0.5
+- Fixed alt text for logo (profile photo) in header
+
 #### 1.0.4
 - Added pagination to category pages
 
