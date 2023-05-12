@@ -21,9 +21,8 @@ Out-of-the-box, this theme supports these Micro.blog plugins and options:
 
 [View the Demo](https://www.mattlangford.com)
 
-### Screenshots
-![Tiny Theme Light](https://github.com/MattSLangford/Tiny-Theme-for-Micro.blog/blob/main/screenshot.png?raw=true)
-![Tiny Theme Dark](https://github.com/MattSLangford/Tiny-Theme-for-Micro.blog/blob/main/screenshot2.png?raw=true)
+### Screenshot
+![Tiny Theme Screenshot GIF](https://raw.githubusercontent.com/MattSLangford/Tiny-Theme-for-Micro.blog/blob/main/screenshot.gif)
 
 ### Installation
 This theme is now listed in the plugins directory of Micro.blog. You can install with one click there. Within Micro.blog, you can instead clone this repo if you prefer (choose plugin instead of theme).
