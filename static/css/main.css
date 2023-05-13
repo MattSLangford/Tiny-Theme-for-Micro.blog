@@ -292,3 +292,10 @@ footer .custom_footer {
 	border: 1px solid var(--link) !important;
 	border-radius: 5px !important;
 }
+
+.bookshelf-book {
+	margin: 2em 0;
+}
+.bookshelf_title {
+	font-weight: strong;
+}
