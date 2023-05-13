@@ -279,6 +279,10 @@ footer .custom_footer {
 	color: var(--accent2);
 }
 
+footer .attribution {
+	display: none;
+}
+
 .full-archives {
 	overflow-wrap: anywhere;
 }
@@ -296,6 +300,7 @@ footer .custom_footer {
 .bookshelf-book {
 	margin: 2em 0;
 }
+
 .bookshelf_title {
 	font-weight: strong;
 }
