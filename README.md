@@ -58,7 +58,7 @@ If you're having any trouble, feel free to [contact me](https://mattlangford.com
 #### **1.1.0**
 - Removed the Settings Screen for the bio page. Instead, it now pulls from the "About Me" field on your account.
 - Added support for Micro.blog's Bookshelf feature
-- Add attribution but hide by default
+- Add attribution but hidden by default
 
 #### 1.0.6
 - New fix for horizontal scrolling issue with long strings of text
