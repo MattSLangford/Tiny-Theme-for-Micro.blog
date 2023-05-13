@@ -3,7 +3,7 @@
 - [Introduction](#introduction) and Demo
 - [Screenshots](#screenshots)
 - [Installation](#installation)
-- [Settings](#settings)
+- [Bio](#bio)
 - [Customization](#customization)
 - [Support](#support)
 - [Changelog](#changelog)
@@ -27,8 +27,8 @@ Out-of-the-box, this theme supports these Micro.blog plugins and options:
 ### Installation
 This theme is now listed in the plugins directory of Micro.blog. You can install with one click there. Within Micro.blog, you can instead clone this repo if you prefer (choose plugin instead of theme).
 
-### Settings
-Once the theme is installed and active on your site, navigate to the theme settings and add your short bio that shows on every page. You can leave it blank to show nothing.
+### Bio
+The bio portion in the header is pulled from the "About Me" field in your Account settings on Micro.blog.
 
 ### Customization
 Basic design changes can be made using CSS in your Micro.blog dashboard. Go to Design > Edit CSS. If you have existing content from a previous theme there, I suggest starting fresh. You can modify colors, spacing, sizing, and much more. To get you started, here are a few common changes.
