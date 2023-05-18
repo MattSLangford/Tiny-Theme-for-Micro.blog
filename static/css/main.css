@@ -8,6 +8,7 @@
 	--code: #e3e3e3;
 	--button-text: #ffffff;
 	--blockquote: #fffee0;
+	--note: #FFFF00;
 }
 
 /* Dark mode */
@@ -22,6 +23,7 @@
 		--code: #44475a;
 		--button-text: #282a36;
 		--blockquote: #44475a;
+		--note: #44475a;
 	}
 }
 
@@ -285,6 +287,13 @@ footer .attribution {
 
 .full-archives {
 	overflow-wrap: anywhere;
+}
+
+p.note {
+	background: var(--note);
+	border-radius: 5px;
+	font-weight: bold;
+	padding: 5px 10px;
 }
 
 /* OVERRIDING DEFAULT MICROBLOG CSS. Using !important isn't ideal, but it's the most effective for these things. */

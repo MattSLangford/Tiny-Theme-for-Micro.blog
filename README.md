@@ -55,6 +55,11 @@ If you're having any trouble, feel free to [contact me](https://mattlangford.com
 
 ### Changelog
 
+#### **1.2.0**
+- Added basic Microformats support
+- Added category classes to allow styling of posts in the feed and single page to be customized based on category
+- Added a special .note class that can be used inside paragraph tags for special information
+
 #### **1.1.0**
 - Removed the Settings Screen for the bio page. Instead, it now pulls from the "About Me" field on your account.
 - Added support for Micro.blog's Bookshelf feature
