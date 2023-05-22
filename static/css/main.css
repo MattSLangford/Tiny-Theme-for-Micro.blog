@@ -306,10 +306,10 @@ p.note {
 	border-radius: 5px !important;
 }
 
-.bookshelf-book {
+.bookshelf_book {
 	margin: 2em 0;
 }
 
 .bookshelf_title {
-	font-weight: strong;
+	font-weight: bold;
 }
