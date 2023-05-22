@@ -224,6 +224,7 @@ pre {
 hr {
 	margin: 2em 0;
 	border: none;
+	text-align: center;
 }
 
 hr::before {
