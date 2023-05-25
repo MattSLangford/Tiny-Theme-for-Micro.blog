@@ -13,14 +13,16 @@
 	</ul>
 </div>
 {{ end }}
-<div class="full-archives">
+<div class="full-archives h-feed">
 	<h3>Full Post List</h3>
 	{{ $list := (where .Site.Pages "Type" "post") }}
 	{{ range $list }}
 
 	<p class="h-entry">
 		<a href="{{ .Permalink }}" class="u-url"><span class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05-0700" }}">{{ .Date.Format "Jan 2, 2006" }}</span></a>:
-		<span class="p-name"><b>{{ .Title }}</b></span>
+		{{ if .Title }}
+			<span class="p-name"><b>{{ .Title }}</b></span>
+		{{ end }}
 		<span class="p-summary">{{ .Summary | truncate 150 }}</span>
 	</p>
 
