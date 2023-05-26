@@ -297,6 +297,12 @@ p.note {
 	padding: 5px 10px;
 }
 
+/* MAKES VIDEO EMBEDS THAT DON'T USE IFRAME RESPONSIVE. DOES NOT WORK WITH YOUTUBE. */
+video {
+	width: 100% !important;
+	height: auto !important;
+}
+
 /* OVERRIDING DEFAULT MICROBLOG CSS. Using !important isn't ideal, but it's the most effective for these things. */
 .photos-grid-container {
 	grid-column-gap: 5px !important;
