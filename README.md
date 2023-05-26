@@ -25,6 +25,10 @@ If you would like to support this project financially, [you can do that via Payp
 
 ## Changelog
 
+### **1.3.0**
+- Microformats improvements ([thanks, @sod](https://micro.blog/sod/19398331))
+- Made video embeds responsive (not those that use iframes)
+
 ### 1.2.1
 - Improved documentation
 - Improved screenshots
