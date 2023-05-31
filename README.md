@@ -8,4 +8,3 @@ Tiny Theme is developed for use with the Micro.blog platform. It is designed to 
 For a working demo and more details, visit [tinyformicro.blog](https://tinyformicro.blog).
 
 [Support the development of this theme](https://paypal.me/mattslangford).
-
