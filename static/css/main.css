@@ -308,9 +308,32 @@ video {
 	grid-column-gap: 5px !important;
 }
 
-.field {
+input[type=text] {
+	padding: 10px;
+	font-size: 0.9em;
 	border: 1px solid var(--link) !important;
 	border-radius: 5px !important;
+	color: var(--text);
+	display: block;
+	height: auto;
+}
+
+input[type=submit] {
+	vertical-align: baseline;
+	padding: 5px 10px;
+	font-size: 0.9em;
+	border-radius: 5px;
+	border: 1px solid var(--link);
+	background: none;
+	color: var(--link);
+	-webkit-appearance: none;
+	margin-top: 5px;
+	font-weight: normal;
+}
+
+input[type=submit]:hover {
+	background: var(--link);
+	color: var(--button-text);
 }
 
 .bookshelf_book {
