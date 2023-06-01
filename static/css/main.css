@@ -308,7 +308,7 @@ video {
 	grid-column-gap: 5px !important;
 }
 
-input[type=text] {
+input[type=text], input[type=search] {
 	padding: 10px;
 	font-size: 0.9em;
 	border: 1px solid var(--link) !important;
@@ -318,7 +318,7 @@ input[type=text] {
 	height: auto;
 }
 
-input[type=submit] {
+input[type=submit], button {
 	vertical-align: baseline;
 	padding: 5px 10px;
 	font-size: 0.9em;
@@ -331,9 +331,14 @@ input[type=submit] {
 	font-weight: normal;
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover, button:hover {
 	background: var(--link);
 	color: var(--button-text);
+}
+
+#search-space-info {
+	font-size:0.9em;
+	font-style: italic;
 }
 
 .bookshelf_book {
