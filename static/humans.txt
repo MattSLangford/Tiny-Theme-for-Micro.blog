@@ -1,0 +1,17 @@
+/* TEAM */
+
+Designed by: Matt Langford
+Web: mattlangford.com
+Contact: hi [at] web domain above
+Twitter: @mattslangford
+Micro.blog: @mtt
+Mastodon: @matthew@social.lol
+Bluesky: @mattlangford.com
+Instagram: @mattslangford
+From: Louisiana, USA
+
+/* SITE */
+
+Web: tinyformicro.blog
+Github: https://github.com/MattSLangford/Tiny-Theme-for-Micro.blog
+Created with: Nova by Panic
