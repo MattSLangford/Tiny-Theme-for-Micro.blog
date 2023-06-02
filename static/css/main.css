@@ -303,7 +303,7 @@ video {
 	height: auto !important;
 }
 
-/* OVERRIDING DEFAULT MICROBLOG CSS. Using !important isn't ideal, but it's the most effective for these things. */
+/* OVERRIDING DEFAULT MICROBLOG AND PLUGIN CSS. Using !important isn't ideal, but it's the most effective for these things. */
 .photos-grid-container {
 	grid-column-gap: 5px !important;
 }
