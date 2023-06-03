@@ -218,10 +218,7 @@ blockquote p:first-of-type {
 	margin-top: 0;
 }
 
-pre {
-	background: var(--code);
-	padding: 1em;
-	overflow: auto;
+div.highlight div {
 	border-radius: 5px;
 }
 

@@ -1,2 +1,17 @@
 {
+"markup": {
+	  "highlight": {
+		 "anchorLineNos": false,
+		 "codeFences": true,
+		 "guessSyntax": true,
+		 "hl_Lines": "",
+		 "lineAnchors": "",
+		 "lineNoStart": 1,
+		 "lineNos": true,
+		 "lineNumbersInTable": true,
+		 "noClasses": true,
+		 "style": "native",
+		 "tabWidth": 4
+	  }
+   }
 }
