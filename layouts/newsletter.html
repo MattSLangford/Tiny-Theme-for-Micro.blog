@@ -14,6 +14,7 @@
 	.email-profile-photo {
 		border-radius: 80px;
 		vertical-align: middle;
+		max-width: 80px;
 	}
 	.microblog_footer {
 		border-top: 1px solid #0000EE;
@@ -23,10 +24,15 @@
 		border-radius: 5px;
 		width: 100%;
 		height: auto;
+		max-width: 1000px !important;
 	}
 	.intro {
 		border-bottom: 1px solid #0000EE;
 		padding-bottom: 20px;
+	}
+	.post {
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 	{{ .CustomCSS }}
 </style>
@@ -42,7 +48,7 @@
 	{{ end }}
 
 	{{ range .Pages }}
-
+	<div class="post">
 		{{ if .Title }}
 			<h3>{{ .Title }}</h3>
 		{{ end }}
@@ -58,7 +64,7 @@
 		{{ end }}
 
 		<a href="{{ .Permalink }}" class="microblog_permalink">{{ .Date.Format "Jan 2, 2006" }} ∞</a>
-
+	</div>
 	{{ end }}
 
 	<div class="microblog_footer">
