@@ -35,10 +35,6 @@
   <link rel="EditURI" type="application/rsd+xml" href="{{ "rsd.xml" | absURL }}" />
   {{ end -}}
 
-  {{ if templates.Exists "partials/fathom.html" }}
-      <li>{{ partial "fathom.html" . }}</li>
-  {{ end }}
-
   <link rel="me" href="https://micro.blog/{{ .Site.Author.username }}" />
   {{ with .Site.Params.twitter_username }}
   <link rel="me" href="https://twitter.com/{{ . }}" />
