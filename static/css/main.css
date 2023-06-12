@@ -317,6 +317,7 @@ input[type=text], input[type=search] {
 	color: var(--text);
 	display: block;
 	height: auto;
+	background: var(--blockquote);
 }
 
 input[type=submit], button {
