@@ -8,6 +8,7 @@
 	--code: #e3e3e3;
 	--button-text: #ffffff;
 	--blockquote: #fffee0;
+	--field: #fffee0;
 	--note: #FFFF00;
 }
 
@@ -23,6 +24,7 @@
 		--code: #44475a;
 		--button-text: #282a36;
 		--blockquote: #44475a;
+		--field: #44475a;
 		--note: #44475a;
 	}
 }
@@ -305,11 +307,13 @@ video {
 }
 
 /* OVERRIDING DEFAULT MICROBLOG AND PLUGIN CSS. Using !important isn't ideal, but it's the most effective for these things. */
+
 .photos-grid-container {
 	grid-column-gap: 5px !important;
 }
 
-input[type=text], input[type=search] {
+input[type=text],
+input[type=search] {
 	padding: 10px;
 	font-size: 0.9em;
 	border: 1px solid var(--link) !important;
@@ -317,10 +321,11 @@ input[type=text], input[type=search] {
 	color: var(--text);
 	display: block;
 	height: auto;
-	background: var(--blockquote);
+	background: var(--field);
 }
 
-input[type=submit], button {
+input[type=submit],
+button {
 	vertical-align: baseline;
 	padding: 5px 10px;
 	font-size: 0.9em;
@@ -333,13 +338,14 @@ input[type=submit], button {
 	font-weight: normal;
 }
 
-input[type=submit]:hover, button:hover {
+input[type=submit]:hover,
+button:hover {
 	background: var(--link);
 	color: var(--button-text);
 }
 
 #search-space-info {
-	font-size:0.9em;
+	font-size: 0.9em;
 	font-style: italic;
 }
 
@@ -349,4 +355,8 @@ input[type=submit]:hover, button:hover {
 
 .bookshelf_title {
 	font-weight: bold;
+}
+
+.bigfoot-footnote__content {
+	color: #000;
 }
