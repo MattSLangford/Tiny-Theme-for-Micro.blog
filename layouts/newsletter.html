@@ -2,9 +2,11 @@
 	a {
 		color: #0000EE;
 	}
+
 	a:hover {
 		text-decoration: none;
 	}
+
 	.microblog_permalink {
 		color: #0000EE;
 		font-size: 0.9em;
@@ -16,6 +18,7 @@
 		vertical-align: middle;
 		max-width: 80px;
 	}
+
 	.microblog_footer {
 		border-top: 1px solid #0000EE;
 	}
@@ -26,15 +29,22 @@
 		height: auto;
 		max-width: 1000px;
 	}
+
 	.intro {
 		border-bottom: 1px solid #0000EE;
 		padding-bottom: 20px;
 	}
+
 	.post {
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
-	{{ .CustomCSS }}
+
+		{
+			{
+			.CustomCSS
+		}
+	}
 </style>
 
 <div class="microblog_email">
@@ -50,20 +60,18 @@
 	{{ range .Pages }}
 	<div class="post">
 		{{ if .Title }}
-			<h3>{{ .Title }}</h3>
+		<h3>{{ .Title }}</h3>
 		{{ end }}
-
+		<a href="{{ .Permalink }}" class="microblog_permalink">{{ .Date.Format "Jan 2, 2006" }} ∞</a>
 		{{ .Content }}
 
 		{{ if gt (len .Params.audio) 0 }}
-			<a href="{ .Permalink }">Audio</a>
+		<a href="{ .Permalink }">Audio</a>
 		{{ end }}
 
 		{{ if gt (len .Params.video) 0 }}
-			<a href="{ .Permalink }">Video</a>
+		<a href="{ .Permalink }">Video</a>
 		{{ end }}
-
-		<a href="{{ .Permalink }}" class="microblog_permalink">{{ .Date.Format "Jan 2, 2006" }} ∞</a>
 	</div>
 	{{ end }}
 
@@ -72,15 +80,15 @@
 		<a href="{{ .Footer.UnsubscribeURL }}">Unsubscribe</a> <span class="microblog_divider">|</span>
 
 		{{ if eq (len .Pages) 1 }}
-			{{ with index .Pages 0 }}
-				<a href="{{ .Permalink }}">View in browser</a> <span class="microblog_divider">|</span>
-			{{ end }}
+		{{ with index .Pages 0 }}
+		<a href="{{ .Permalink }}">View in browser</a> <span class="microblog_divider">|</span>
+		{{ end }}
 		{{ end }}
 
 		<a href="{{ .Site.BaseURL }}">{{ .Site.Hostname }}</a>
 
 		{{ if gt (len .Footer.MailingAddress) 0 }}
-			<span class="microblog_divider">|</span> {{ .Footer.MailingAddress }}
+		<span class="microblog_divider">|</span> {{ .Footer.MailingAddress }}
 		{{ end }}
 
 	</div>
