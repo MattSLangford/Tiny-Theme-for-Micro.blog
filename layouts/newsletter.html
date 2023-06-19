@@ -1,6 +1,6 @@
 <style>
 	a {
-		color: #0000EE;
+		color: #1565C0;
 	}
 
 	a:hover {
@@ -8,7 +8,7 @@
 	}
 
 	.microblog_permalink {
-		color: #0000EE;
+		color: #1565C0;
 		font-size: 0.9em;
 		text-decoration: none;
 	}
@@ -20,7 +20,9 @@
 	}
 
 	.microblog_footer {
-		border-top: 1px solid #0000EE;
+		border-top: 1px solid #1565C0;
+		padding-top: 5px;
+		margin-top: 5px;
 	}
 
 	img {
@@ -31,7 +33,7 @@
 	}
 
 	.intro {
-		border-bottom: 1px solid #0000EE;
+		border-bottom: 1px solid #1565C0;
 		padding-bottom: 20px;
 	}
 
@@ -39,17 +41,11 @@
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
-
-		{
-			{
-			.CustomCSS
-		}
-	}
 </style>
 
 <div class="microblog_email">
 	<img src="{{ .Site.Author.avatar }}" width="80" height="80" alt="Profile icon" class="email-profile-photo">
-	<h1>{{ .Site.Title }}</h1>
+	<h2>{{ .Site.Title }}</h2>
 
 	{{ if gt (len .Intro) 0 }}
 	<div class="intro">
@@ -59,10 +55,11 @@
 
 	{{ range .Pages }}
 	<div class="post">
+		<a href="{{ .Permalink }}" class="microblog_permalink">{{ .Date.Format "Jan 2, 2006" }} ↓</a>
+
 		{{ if .Title }}
 		<h3>{{ .Title }}</h3>
 		{{ end }}
-		<a href="{{ .Permalink }}" class="microblog_permalink">{{ .Date.Format "Jan 2, 2006" }} ∞</a>
 		{{ .Content }}
 
 		{{ if gt (len .Params.audio) 0 }}
