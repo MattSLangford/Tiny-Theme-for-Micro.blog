@@ -130,7 +130,7 @@ nav a,
 nav a:visited,
 nav a:hover,
 a.conversation-on-mb,
-a.reply-by-email {
+a.reply-by-email, a.read-more {
 	text-decoration: none;
 	padding: 5px 10px;
 	border: 1px solid var(--link);
@@ -141,7 +141,7 @@ a.reply-by-email {
 
 nav a:hover,
 a.conversation-on-mb:hover,
-a.reply-by-email:hover {
+a.reply-by-email:hover, a.read-more:hover {
 	background: var(--link);
 	color: var(--button-text);
 }
@@ -298,6 +298,12 @@ p.note {
 	border-radius: 5px;
 	font-weight: bold;
 	padding: 5px 10px;
+}
+
+/* IF USING THE TINY THEME ADD ON FOR SUMMARY POSTS */
+
+.p-summary {
+	margin-bottom: 2em;
 }
 
 /* MAKES VIDEO EMBEDS THAT DON'T USE IFRAME RESPONSIVE. DOES NOT WORK WITH YOUTUBE. */
