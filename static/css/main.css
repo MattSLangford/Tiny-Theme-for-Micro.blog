@@ -300,7 +300,7 @@ p.note {
 	padding: 5px 10px;
 }
 
-p > .code {
+p > code {
 	background: var(--code);
 	padding: 2px 4px;
 	font-size: 0.9em;
