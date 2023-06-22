@@ -300,6 +300,13 @@ p.note {
 	padding: 5px 10px;
 }
 
+p > .code {
+	background: var(--code);
+	padding: 2px 4px;
+	font-size: 0.9em;
+	border-radius: 5px;
+}
+
 /* IF USING THE TINY THEME ADD ON FOR SUMMARY POSTS */
 
 .p-summary {
