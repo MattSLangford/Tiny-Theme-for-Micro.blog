@@ -2,6 +2,40 @@
 <div class="home h-feed">
 
   <ul class="post-list">
+  {{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 25) }}
+  {{ range $paginator.Pages  }}
+<div class="post-preview h-entry {{ range .Params.categories }} {{ . }}{{ end }}">
+    <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>
+    {{ if .Title }}
+    <h2 class="post-title p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    {{ end }}
+    <div class="e-content">
+      {{ .Content }}
+    </div>
+  </div>
+  {{ end }}
+  </ul>
+</div>
+<div class="post-nav">
+  {{ if $paginator.HasPrev }}
+  <span class="prev">
+    <a href="{{ $paginator.Prev.URL }}" title="Previous Page"><span class="arrow">← Newer Posts</span></a>
+  </span>
+  {{ end }}
+  {{ if $paginator.HasNext }}
+  <span class="next">
+    <a href="{{ $paginator.Next.URL }}"><span class="arrow">Older Posts →</span></a>
+  </span>
+  {{ end }}
+</div>
+{{ end }}
+
+
+
+{{ define "main" }}
+<div class="home h-feed">
+
+  <ul class="post-list">
 	{{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 25) }}
 	{{ range $paginator.Pages  }}
       <li class="h-entry">
