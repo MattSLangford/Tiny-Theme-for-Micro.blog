@@ -146,6 +146,10 @@ a.reply-by-email:hover, a.read-more:hover {
 	color: var(--button-text);
 }
 
+button {
+	cursor: pointer;
+}
+
 header h1 {
 	margin-top: 0.2em;
 	margin-bottom: 0.2em;
@@ -300,11 +304,12 @@ p.note {
 	padding: 5px 10px;
 }
 
-p > code {
+p > code, span.tinylytics_hits {
 	background: var(--code);
 	padding: 2px 4px;
 	font-size: 0.9em;
 	border-radius: 5px;
+	font-family: monospace;
 }
 
 /* IF USING THE TINY THEME ADD ON FOR SUMMARY POSTS */
