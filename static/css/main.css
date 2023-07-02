@@ -324,6 +324,15 @@ video {
 	height: auto !important;
 }
 
+/* Styling specific to Tinylytics Plugin */
+
+.did_select {
+	background: var(--link);
+	color: var(--button-text);
+	opacity: 0.8;
+	cursor: not-allowed;
+}
+
 /* OVERRIDING DEFAULT MICROBLOG AND PLUGIN CSS. Using !important isn't ideal, but it's the most effective for these things. */
 
 .photos-grid-container {
