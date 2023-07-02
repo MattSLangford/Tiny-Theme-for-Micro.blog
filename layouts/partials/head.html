@@ -18,7 +18,13 @@
 
   <title>
     {{ block "title" . }}
-    {{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Site.Title }} - {{ .Title }}{{ end }}
+    {{ if .IsHome }}
+      {{ .Site.Title }}
+    {{ else if .Title }}
+      {{ .Title }} | {{ .Site.Title }}
+    {{ else}}
+      {{ .Summary | truncate 40 }} | {{ .Site.Title }}
+    {{ end }}
     {{ end }}
   </title>
 
