@@ -9,7 +9,7 @@
 	--button-text: #ffffff;
 	--blockquote: #fffee0;
 	--field: #fffee0;
-	--note: #FFFF00;
+	--note: #FEF770;
 }
 
 /* Dark mode */
@@ -310,6 +310,10 @@ p > code, span.tinylytics_hits {
 	font-size: 0.9em;
 	border-radius: 5px;
 	font-family: monospace;
+}
+
+mark {
+	background: var(--note);
 }
 
 /* IF USING THE TINY THEME ADD ON FOR SUMMARY POSTS */
