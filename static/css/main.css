@@ -304,7 +304,7 @@ p.note {
 	padding: 5px 10px;
 }
 
-p > code, span.tinylytics_hits {
+p > code, li > code, span.tinylytics_hits {
 	background: var(--code);
 	padding: 2px 4px;
 	font-size: 0.9em;
