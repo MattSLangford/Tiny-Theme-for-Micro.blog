@@ -184,7 +184,8 @@ h2 {
 }
 
 article img,
-.e-content img {
+.e-content img,
+.p-summary img {
 	width: 100%;
 	height: auto;
 	border-radius: 5px;
