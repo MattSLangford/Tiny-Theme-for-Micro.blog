@@ -10,7 +10,15 @@
   <meta name="twitter:title" content="{{ .Site.Title }}">
   <meta property="og:title" content="{{ .Site.Title }}">
   {{ end }}
-  <meta name="twitter:description" content="{{ .Summary }}">
+  {{ if .IsHome }}
+  <meta name="twitter:description" content="{{ .Site.Params.itunes_description | truncate 60 }}">
+  <meta name="og:description" content="{{ .Site.Params.itunes_description | truncate 60 }}">
+  <meta name="description" content="{{ .Site.Params.itunes_description }}">
+  {{ else }}
+  <meta name="twitter:description" content="{{ .Summary | truncate 60 }}">
+  <meta name="og:description" content="{{ .Summary | truncate 60 }}">
+  <meta name="description" content="{{ .Summary }}">
+  {{ end }}
   {{ range .Params.photos }}
   <meta name="twitter:image" content="{{ . }}">
   <meta property="og:image" content="{{ . }}">
@@ -22,13 +30,12 @@
       {{ .Site.Title }}
     {{ else if .Title }}
       {{ .Title }} | {{ .Site.Title }}
-    {{ else}}
+    {{ else }}
       {{ .Summary | truncate 40 }} | {{ .Site.Title }}
     {{ end }}
     {{ end }}
   </title>
 
-  <meta name="description" content="{{ .Summary }}">
   <link rel="shortcut icon" href="https://micro.blog/{{ .Site.Author.username }}/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   <link rel="stylesheet" href="{{ "custom.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
