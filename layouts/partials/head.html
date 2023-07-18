@@ -31,7 +31,7 @@
     {{ else if .Title }}
       {{ .Title }} | {{ .Site.Title }}
     {{ else }}
-      {{ .Summary | truncate 40 }} | {{ .Site.Title }}
+      {{ .Summary | plainify | truncate 40 }} | {{ .Site.Title }}
     {{ end }}
     {{ end }}
   </title>
