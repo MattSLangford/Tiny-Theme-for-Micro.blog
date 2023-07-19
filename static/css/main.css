@@ -10,6 +10,7 @@
 	--blockquote: #fffee0;
 	--field: #fffee0;
 	--note: #FEF770;
+	--mark: #FFFF99;
 }
 
 /* Dark mode */
@@ -26,6 +27,7 @@
 		--blockquote: #44475a;
 		--field: #44475a;
 		--note: #44475a;
+		--mark: #FFFF99;
 	}
 }
 
@@ -314,7 +316,8 @@ p > code, li > code, span.tinylytics_hits, span.tinylytics_uptime {
 }
 
 mark {
-	background: var(--note);
+	background: var(--mark);
+	color: var();
 }
 
 /* IF USING THE TINY THEME ADD ON FOR SUMMARY POSTS */
