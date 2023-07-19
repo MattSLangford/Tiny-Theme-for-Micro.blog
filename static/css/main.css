@@ -382,6 +382,7 @@ button {
 	-webkit-appearance: none;
 	margin-top: 5px;
 	font-weight: normal;
+	cursor: pointer;
 }
 
 input[type=submit]:hover,
