@@ -163,6 +163,13 @@ button {
 	cursor: pointer;
 }
 
+.reply-to {
+	background: var(--link);
+	border-radius: 5px;
+	padding: 0 .333em;
+
+}
+
 header h1 {
 	margin-top: 0.2em;
 	margin-bottom: 0.2em;
