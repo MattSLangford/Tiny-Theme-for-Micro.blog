@@ -11,9 +11,7 @@
 				<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
 			{{ end }}
 
-			<a href="{{ .Permalink }}" class="u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a> |
-
-			{{ if .Params.reply_to_url }} <div class="reply-to"> Replying to: <img src="{{ .Params.reply_to_avatar }}" width="22" height="22" style="width: 22px; height: 22px; vertical-align: top; border-radius: 11px; padding: 0px; display: inline;" alt="{{ .Params.reply_to_username }}" /> {{ if eq .Params.reply_to_hostname "micro.blog" }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">@{{ .Params.reply_to_username }}</a> {{ else }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">{{ .Params.reply_to_hostname }}</a> {{ end }} </div> {{ end }}
+			<a href="{{ .Permalink }}" class="u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a> | {{ if .Params.reply_to_url }} <span class="reply-to"> Replying to: {{ if eq .Params.reply_to_hostname "micro.blog" }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">@{{ .Params.reply_to_username }}</a> {{ else }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">{{ .Params.reply_to_hostname }}</a> {{ end }} </span> {{ end }}
 
 			<div class="e-content">
 				{{ .Content }}
