@@ -8,7 +8,7 @@
 		{{ range $list  }}
 		  <li class="h-entry">
 			{{ if .Title }}
-				<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+				<h2><a class ="post-title" href="{{ .Permalink }}">{{ .Title }}</a></h3>
 			{{ end }}
 
 			<a href="{{ .Permalink }}" class="u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>
@@ -25,7 +25,7 @@
 		{{ range $list  }}
 		  <li class="h-entry">
 			{{ if .Title }}
-				<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+				<h2 class ="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
 			{{ end }}
 
 			<a href="{{ .Permalink }}" class="u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>
