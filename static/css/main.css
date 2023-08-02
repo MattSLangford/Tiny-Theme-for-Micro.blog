@@ -415,12 +415,3 @@ button:hover {
 .bigfoot-footnote__content {
 	color: #000;
 }
-
-figure {
-	margin: 0;
-}
-
-figcaption {
-	text-align: center;
-	font-size: 0.9em;
-}
