@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="post">
+<div class="post {{ .BaseFileName | urlize | lower }}">
 
   {{ if .Title }}
     <h2 class="p-name">{{ .Title }}</h2>

@@ -8,7 +8,7 @@
     {{ end }}
   </header>
 
-  <article class="post-content e-content {{ range .Params.categories }} {{ . }}{{ end }}">
+  <article class="post-content e-content {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
     {{ .Content }}
   </article>
 

@@ -4,7 +4,7 @@
   <ul class="post-list">
     {{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 25) }}
     {{ range $paginator.Pages  }}
-    <div class="post-preview h-entry {{ range .Params.categories }} {{ . }}{{ end }}">
+    <div class="post-preview h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
       <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>
       {{ if .Title }}
       <h2 class="post-title p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
