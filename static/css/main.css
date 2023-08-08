@@ -339,6 +339,14 @@ mark {
 	color: var();
 }
 
+.tiny-img {
+	max-width: 25em;
+}
+
+.tiny-text {
+	font-size: 0.6em;
+}
+
 /* IF USING THE TINY THEME ADD ON FOR SUMMARY POSTS */
 
 .p-summary {
