@@ -25,7 +25,6 @@
   <meta name="twitter:image" content="{{ . }}">
   <meta property="og:image" content="{{ . }}">
   {{ end }}
-
   <title>
     {{ block "title" . }}
     {{ if .IsHome }}
@@ -37,11 +36,8 @@
     {{ end }}
     {{ end }}
   </title>
-
-  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
-
-  {{ partial "microblog_head.html" . }}
-
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="author" href="humans.txt" />
+  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
+  {{ partial "microblog_head.html" . }}
 </head>
