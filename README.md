@@ -11,8 +11,8 @@ Tiny Theme is developed for use with the Micro.blog platform. It is designed to 
 
 For a working demo and more details, visit [tinyformicro.blog](https://tinyformicro.blog).
 
-## Support Development
+## Do you value this theme?
 
 Tiny Theme and its plugins are provided free of charge to Micro.blog users. I do not receive payment from Micro.blog in any way. If you'd like to help offset expenses and ensure the future of Tiny Theme and its plugins, please consider supporting its development.
 
-<a href="https://www.buymeacoffee.com/mattlangford" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+[Make a Donation](https://donate.stripe.com/5kAeV7gWk9fk7aE7ss)!
