@@ -15,4 +15,4 @@ For a working demo and more details, visit [tinyformicro.blog](https://tinyformi
 
 Tiny Theme and its plugins are provided free of charge to Micro.blog users. I do not receive payment from Micro.blog in any way. If you'd like to help offset expenses and ensure the future of Tiny Theme and its plugins, please consider supporting its development.
 
-[Make a Donation](https://donate.stripe.com/5kAeV7gWk9fk7aE7ss) in any amount. Thank you!
+[Make a one-time Donation](https://donate.stripe.com/5kAeV7gWk9fk7aE7ss) in any amount or [setup a $5 monthly donation](https://buy.stripe.com/28odR3eOc2QWeD6cMN). Thank you!
