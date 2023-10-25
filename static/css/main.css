@@ -370,6 +370,12 @@ video {
 	cursor: not-allowed;
 }
 
+/* STYLING TO TWEAK CODE BLOCKS (SYNTAX HIGHLIGHTING) */
+pre {
+	overflow: auto;
+	padding: 1em;
+}
+
 /* OVERRIDING DEFAULT MICROBLOG AND PLUGIN CSS. Using !important isn't ideal, but it's the most effective for these things. */
 
 .photos-grid-container {
