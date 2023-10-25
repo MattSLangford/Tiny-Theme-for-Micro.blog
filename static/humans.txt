@@ -5,7 +5,7 @@ Web: mattlangford.com
 Contact: hi [at] matt langford dot com
 Twitter: @mattslangford
 Micro.blog: @mtt
-Mastodon: @matthew@social.lol
+Mastodon: @matt@mattlangford.com
 From: Louisiana, USA
 
 /* SITE */
