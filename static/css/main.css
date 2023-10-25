@@ -371,6 +371,10 @@ video {
 }
 
 /* STYLING TO TWEAK CODE BLOCKS (SYNTAX HIGHLIGHTING) */
+
+highlight {
+	font-size: 0.9em;
+}
 pre {
 	overflow: auto;
 	padding: 1em;
