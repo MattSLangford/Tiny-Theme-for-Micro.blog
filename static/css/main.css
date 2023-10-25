@@ -372,7 +372,7 @@ video {
 
 /* STYLING TO TWEAK CODE BLOCKS (SYNTAX HIGHLIGHTING) */
 
-highlight {
+.highlight {
 	font-size: 0.9em;
 }
 pre {
