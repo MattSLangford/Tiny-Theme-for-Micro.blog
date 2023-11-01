@@ -369,10 +369,10 @@ video {
 	opacity: 0.8;
 	cursor: not-allowed;
 }
-
-.tinylytics_webring {
-	display: block;
+a.tinylytics_webring {
+	text-decoration: none;
 }
+
 .tinylytics_webring_avatar {
 	width: auto;
 	height: auto;
