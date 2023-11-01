@@ -371,12 +371,13 @@ video {
 }
 a.tinylytics_webring {
 	text-decoration: none;
+	display: block;
 }
 
 .tinylytics_webring_avatar {
 	width: auto;
 	height: auto;
-	display: inline;
+	display: inline !important;
 	height: 1em;
 	border-radius: 200px;
 }
