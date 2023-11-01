@@ -373,9 +373,7 @@ video {
 	align-items: center;
 	display: flex;
 	flex-direction: row;
-	gap: 2px;
-	justify-content: center;
-	margin: 0 .5em;
+	gap: 3px;
 }
 a.tinylytics_webring {
 	text-decoration: none;
