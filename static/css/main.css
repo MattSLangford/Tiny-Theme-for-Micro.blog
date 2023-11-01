@@ -369,15 +369,22 @@ video {
 	opacity: 0.8;
 	cursor: not-allowed;
 }
+.tinylytics_webring {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	gap: 2px;
+	justify-content: center;
+	margin: 0 .5em;
+}
 a.tinylytics_webring {
 	text-decoration: none;
 }
 
 .tinylytics_webring_avatar {
 	width: auto;
-	display: inline !important;
-	height: 1em;
-	border-radius: 200px;
+	height: 1.75em;
+	border-radius: 100%;
 }
 
 /* STYLING TO TWEAK CODE BLOCKS (SYNTAX HIGHLIGHTING) */
