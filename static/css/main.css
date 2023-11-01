@@ -373,7 +373,7 @@ video {
 .tinylytics_webring {
 	display: block;
 }
-.tinylytics_webring img {
+.tinylytics_webring_avatar {
 	width: auto;
 	height: auto;
 	display: inline;
