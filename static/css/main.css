@@ -370,6 +370,17 @@ video {
 	cursor: not-allowed;
 }
 
+.tinylytics_webring {
+	display: block;
+}
+.tinylytics_webring img {
+	width: auto;
+	height: auto;
+	display: inline;
+	height: 1em;
+	border-radius: 200px;
+}
+
 /* STYLING TO TWEAK CODE BLOCKS (SYNTAX HIGHLIGHTING) */
 
 .highlight {
