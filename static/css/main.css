@@ -402,7 +402,8 @@ pre {
 }
 
 input[type=text],
-input[type=search] {
+input[type=search],
+input[type=email] {
 	padding: 10px;
 	font-size: 0.9em;
 	border: 1px solid var(--link) !important;
@@ -411,6 +412,7 @@ input[type=search] {
 	display: block;
 	height: auto;
 	background: var(--field);
+	margin: 5px 0;
 }
 
 input[type=submit],
@@ -432,6 +434,14 @@ input[type=submit]:hover,
 button:hover {
 	background: var(--link);
 	color: var(--button-text);
+}
+
+label {
+	font-weight: bold;
+}
+
+form p {
+	margin-bottom: 0;
 }
 
 #search-space-info {
