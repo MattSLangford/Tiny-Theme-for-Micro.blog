@@ -296,6 +296,10 @@ sup a {
 	max-width: 40px !important;
 }
 
+.microblog_text img {
+	max-width: 100%;
+}
+
 .microblog_time a,
 .microblog_time a:visited {
 	color: var(--accent2);
