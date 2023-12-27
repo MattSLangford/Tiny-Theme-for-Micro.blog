@@ -16,6 +16,12 @@
 <div class="full-archives h-feed">
 	<h3>Full Post List</h3>
 	{{ $list := (where .Site.Pages "Type" "post") }}
+
+  {{ $excluded_posts := where $list "Params.categories" "intersect" (slice .Site.Params.archive_excluded_categories) }}
+  {{ if gt (len $excluded_posts) 0 }}
+    {{ $list := $list | symdiff $excluded_posts}}
+  {{ end }}
+
 	{{ range $list }}
 
 	<p class="h-entry">
