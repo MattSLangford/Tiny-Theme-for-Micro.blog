@@ -21,7 +21,7 @@
   {{ end }}
 
 </div>
-{{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/reply-by-bluesky.html") (templates.Exists "partials/conversation-link.html") (templates.Exists "partials/plugin_tinylytics.html") (templates.Exists "partials/reply-on-mastodon.html")}}
+{{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") (templates.Exists "partials/plugin_tinylytics.html") (templates.Exists "partials/reply-on-mastodon.html")}}
 <ul class="reply-buttons">
 {{ if templates.Exists "partials/plugin_tinylytics.html" }}
       <li><button class="tinylytics_kudos">Kudos</button></li>
@@ -35,13 +35,12 @@
 {{ if templates.Exists "partials/reply-on-mastodon.html" }}
   <li>{{ partial "reply-on-mastodon.html" . }}</li>
 {{ end }}
-
-{{ if and (templates.Exists "partials/reply-on-bluesky.html") (.Params.bluesky) }}
-  <li>{{ partial "reply-on-bluesky.html" . }}</li>
-{{ end }}
-
 {{ end }}
 </ul>
+
+{{ if .Params.bluesky }}
+  <a class="u-syndication" {{ printf "href=%q" .Params.bluesky.url | safeHTMLAttr }} style="display: none;">Also on Bluesky</a>
+{{ end }}
 
 {{ if .Site.Params.include_conversation }}
 <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>

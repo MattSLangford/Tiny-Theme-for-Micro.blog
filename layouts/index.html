@@ -1,29 +1,32 @@
 {{ define "main" }}
 <div class="posts h-feed">
     <div class="post_list" role="main">
-{{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") }}
+        {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") }}
         {{ range .Paginator.Pages }}
         <div class="post-preview h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
-          <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>
-          {{ if .Title }}
-          <h2 class="post-title p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-          {{ if templates.Exists "partials/summary.html" }}
-          <div class="p-summary">
-            {{ .Summary | safeHTML }}
-            {{ if .Truncated }}
-            <p><a class="read-more" href="{{ .Permalink }}">{{ .Site.Params.read_more_text | safeHTML }}</a></p>
+            <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>
+            {{ if .Title }}
+            <h2 class="post-title p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            {{ if templates.Exists "partials/summary.html" }}
+            <div class="p-summary">
+                {{ .Summary | safeHTML }}
+                {{ if .Truncated }}
+                <p><a class="read-more" href="{{ .Permalink }}">{{ .Site.Params.read_more_text | safeHTML }}</a></p>
+                {{ end }}
+            </div>
+            {{ else }}
+            <div class="e-content">
+                {{ .Content }}
+            </div>
             {{ end }}
-          </div>
-          {{ else }}
-          <div class="e-content">
-            {{ .Content }}
-          </div>
-          {{ end }}
-          {{ else }}
-          <div class="e-content">
-            {{ .Content }}
-          </div>
-          {{ end }}
+            {{ else }}
+            <div class="e-content">
+                {{ .Content }}
+            </div>
+            {{ end }}
+            {{ if .Params.bluesky }}
+                <a class="u-syndication" {{ printf "href=%q" .Params.bluesky.url | safeHTMLAttr }} style="display: none;">Also on Bluesky</a>
+            {{ end }}
         </div>
         {{ end }}
     </div>
