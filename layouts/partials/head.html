@@ -39,7 +39,5 @@
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="author" href="humans.txt" />
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
-  {{ if templates.Exists "partials/microblog_head.html" }}
-    {{ partial "microblog_head.html" . }}
-  {{ end }}
+  {{ partial "microblog_head.html" . }}
 </head>
