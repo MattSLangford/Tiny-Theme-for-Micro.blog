@@ -1,7 +1,7 @@
 <header class="site-header">
 	<a href="/"><img src="{{ .Site.Author.avatar }}" alt="{{ .Site.Title }} Profile Photo" class="profile_photo u-photo" width="80" height="80"></a>
     <h1><a class="site-title p-name u-url" href="/">{{ .Site.Title }}</a></h1>
-    <p class="description">{{ .Site.Params.itunes_description }}</p>
+    <p class="description">{{ .Site.Params.itunes_description | safeHTML }}</p>
     <nav class="site-nav">
     	<ul>
 		{{ range .Site.Menus.main }}
