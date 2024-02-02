@@ -1,4 +1,7 @@
 {{ define "main" }}
+{{ if templates.Exists "partials/microhook-before-post-list.html" }}
+    {{ partial "microhook-before-post-list.html" . }}
+{{ end }}
 <div class="posts h-feed">
     <div class="post_list" role="main">
         {{ $paginator := .Paginate (where .Site.Pages.ByDate.Reverse "Type" "post") }}
@@ -31,6 +34,9 @@
         {{ end }}
     </div>
 </div>
+{{ if templates.Exists "partials/microhook-after-post-list.html" }}
+    {{ partial "microhook-after-post-list.html" . }}
+{{ end }}
 <div class="post-nav">
     {{ if $paginator.HasPrev }}
     <span class="prev">

@@ -16,6 +16,10 @@
   {{ range .Site.Params.plugins_js }}
   <script src="{{ . }}"></script>
   {{ end }}
+
+  {{ if templates.Exists "partials/microhook-before-closing-body.html" }}
+      {{ partial "microhook-before-closing-body.html" . }}
+  {{ end }}
 </body>
 
 </html>

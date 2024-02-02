@@ -11,5 +11,9 @@
     {{ .Content }}
   </article>
 
+{{ if templates.Exists "partials/microhook-after-page-content.html" }}
+      {{ partial "microhook-after-page-content.html" . }}
+{{ end }}
+
 </div>
 {{ end }}

@@ -20,6 +20,10 @@
   </ul>
   {{ end }}
 
+{{ if templates.Exists "partials/microhook-after-post.html" }}
+    {{ partial "microhook-after-post.html" . }}
+{{ end }}
+
 </div>
 {{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") (templates.Exists "partials/plugin_tinylytics.html") (templates.Exists "partials/reply-on-mastodon.html")}}
 <ul class="reply-buttons">
@@ -44,6 +48,10 @@
 
 {{ if .Site.Params.include_conversation }}
 <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
+{{ end }}
+
+{{ if templates.Exists "partials/microhook-after-comments.html" }}
+    {{ partial "microhook-after-comments.html" . }}
 {{ end }}
 
 {{ end }}
