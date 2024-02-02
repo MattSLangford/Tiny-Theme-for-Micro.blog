@@ -39,6 +39,9 @@
 {{ if templates.Exists "partials/reply-on-mastodon.html" }}
   <li>{{ partial "reply-on-mastodon.html" . }}</li>
 {{ end }}
+{{ if templates.Exists "partials/microhook-share-button.html" }}
+  {{ partial "microhook-share-button.html" . }}
+{{ end }}
 {{ end }}
 </ul>
 

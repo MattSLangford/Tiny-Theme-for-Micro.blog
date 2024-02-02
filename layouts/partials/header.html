@@ -6,6 +6,9 @@
 	{{ else }}
     	<p class="description">{{ .Site.Params.itunes_description | safeHTML }}</p>
 	{{ end }}
+	{{ if templates.Exists "partials/microhook-navigation.html" }}
+		{{ partial "microhook-navigation.html" . }}
+	{{ else }}
     <nav class="site-nav">
     	<ul>
 		{{ range .Site.Menus.main }}
@@ -17,4 +20,5 @@
 		{{ end }}
 		</ul>
     </nav>
+	{{ end }}
 </header>
