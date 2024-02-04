@@ -1,4 +1,8 @@
 {{ define "main" }}
+{{ if templates.Exists "partials/microhook-post-list.html" }}
+    {{ partial "microhook-post-list.html" . }}
+{{ else }}
+
 {{ if templates.Exists "partials/microhook-before-post-list.html" }}
     {{ partial "microhook-before-post-list.html" . }}
 {{ end }}
@@ -49,4 +53,5 @@
     </span>
     {{ end }}
 </div>
+{{ end }}
 {{ end }}
