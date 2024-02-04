@@ -12,6 +12,9 @@
     {{ .Content }}
   </article>
 
+{{ if templates.Exists "partials/microhook-categories.html" }}
+      {{ partial "microhook-categories.html" . }}
+{{ else }}
   {{ if .Params.categories }}
   <ul class="post-tags">
     {{ range .Params.categories }} {{ $href := print (absURL "categories/") (urlize .) }}
@@ -19,6 +22,7 @@
     {{ end }}
   </ul>
   {{ end }}
+{{ end }}
 
 {{ if templates.Exists "partials/microhook-after-post.html" }}
     {{ partial "microhook-after-post.html" . }}
