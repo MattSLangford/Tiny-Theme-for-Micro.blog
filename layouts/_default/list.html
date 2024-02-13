@@ -1,6 +1,8 @@
 {{ define "main" }}
 <div class="home h-feed">
 
+<h2 class="p-name">{{ .Title }}</h2>
+
   <ul class="post-list">
     {{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") }}
     {{ range .Paginator.Pages  }}
