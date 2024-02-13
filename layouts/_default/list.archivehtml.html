@@ -2,6 +2,9 @@
 <header class="post-header">
 	<h2 class="post-title">Archive</h2>
 </header>
+{{ if templates.Exists "partials/microhook-archive-lead.html" }}
+	{{ partial "microhook-archive-lead.html" . }}
+{{ end }}
 {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
 {{ if gt (len $list) 0 }}
 <div class="archive-categories">

@@ -1,3 +1,6 @@
+{{ if templates.Exists "partials/microhook-pagination.html" }}
+    {{ partial "microhook-pagination.html" . }}
+{{ else }}
 {{ $pag := $.Paginator }}
 
 <nav id="post-nav">
@@ -16,3 +19,4 @@
         </span>
     {{ end }}
 </nav>
+{{ end }}
