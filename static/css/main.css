@@ -394,6 +394,7 @@ a.tinylytics_webring {
 
 .highlight {
 	font-size: 0.9em;
+	line-height: 1em;
 }
 pre {
 	overflow: auto;
