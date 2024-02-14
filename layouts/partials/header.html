@@ -4,7 +4,11 @@
 	{{ else }}
 		<a href="/"><img src="{{ .Site.Author.avatar }}" alt="{{ .Site.Title }} Profile Photo" class="profile_photo u-photo" width="80" height="80"></a>
 	{{ end }}
+	{{ if templates.Exists "partials/microhook-title.html" }}
+		{{ partial "microhook-title.html" . }}
+	{{ else }}
     <h1><a class="site-title p-name u-url" href="/">{{ .Site.Title }}</a></h1>
+	{{ end }}
 	{{ if templates.Exists "partials/microhook-description.html" }}
 		{{ partial "microhook-description.html" . }}
 	{{ else }}

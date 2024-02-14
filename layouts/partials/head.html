@@ -38,7 +38,11 @@
   </title>
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="author" href="humans.txt" />
+  {{ if templates.Exists "partials/microhook-uncss.html" }}
+    {{ partial "microhook-uncss.html" . }}
+  {{ else }}
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
+  {{ end }}
   {{ partial "microblog_head.html" . }}
   {{ if templates.Exists "partials/microhook-head.html" }}
     {{ partial "microhook-head.html" . }}
