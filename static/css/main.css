@@ -466,10 +466,8 @@ form p {
 .bigfoot-footnote__content {
 	color: #000;
 }
+
 .microblog_shared_note {
-	display: none;
-}
-.tinytheme_shared_note {
 	background: red;
 	margin: 0 auto;
 	padding: 5px;

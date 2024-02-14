@@ -1,13 +1,7 @@
 {{ define "main" }}
-<div class="post note">
+<div class="post">
 
   <article class="post-content">
-    {{ if templates.Exists "partials/microhook-private-note.html" }}
-          {{ partial "microhook-private-note.html" . }}
-    {{ else }}
-          <p class="tinytheme_shared_note"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="15px" height="15px" style="margin-bottom: -1px;"><path d="M 6 4 C 4.9069372 4 4 4.9069372 4 6 L 4 14.832031 A 1.0001 1.0001 0 0 0 4 15.158203 L 4 19.832031 A 1.0001 1.0001 0 0 0 4 20.158203 L 4 24 C 4 25.093063 4.9069372 26 6 26 L 24 26 C 25.093063 26 26 25.093063 26 24 L 26 20.167969 A 1.0001 1.0001 0 0 0 26 19.841797 L 26 15.167969 A 1.0001 1.0001 0 0 0 26 14.841797 L 26 6 C 26 4.9069372 25.093063 4 24 4 L 6 4 z M 6 11 L 24 11 L 24 14 L 6 14 L 6 11 z M 6 16 L 24 16 L 24 19 L 6 19 L 6 16 z M 6 21 L 24 21 L 24 24 L 6 24 L 6 21 z"></path></svg> <i>This is a private note that has been shared.</i></p>
-    {{ end }}
-
     {{ .Content }}
   </article>
 
