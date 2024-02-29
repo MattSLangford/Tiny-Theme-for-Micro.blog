@@ -14,7 +14,7 @@
             <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>
             {{ if .Title }}
             <h2 class="post-title p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-            {{ if or (templates.Exists "partials/summary.html") (templates.Exists "partials/microhook-post-summary.html") }}
+            {{ if templates.Exists "partials/summary.html" }}
             <div class="p-summary">
                 {{ .Summary | safeHTML }}
                 {{ if .Truncated }}
