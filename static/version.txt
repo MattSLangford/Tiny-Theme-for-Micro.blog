@@ -1,1 +1,1 @@
-// This site is running Tiny 2.4 //
+// This site is running Tiny 2.5 //
