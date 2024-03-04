@@ -3,12 +3,12 @@
 {{ else }}
 
 <div class="post-nav">
-    {{ if $paginator.HasPrev }}
+    {{ if $pag.HasPrev }}
     <span class="prev">
         <a href="{{ $paginator.Prev.URL }}" title="Previous Page"><span class="arrow">← Newer Posts</span></a>
     </span>
     {{ end }}
-    {{ if $paginator.HasNext }}
+    {{ if $pag.HasNext }}
     <span class="next">
         <a href="{{ $paginator.Next.URL }}"><span class="arrow">Older Posts →</span></a>
     </span>
