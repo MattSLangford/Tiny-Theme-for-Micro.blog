@@ -45,17 +45,8 @@
 {{ if templates.Exists "partials/microhook-after-post-list.html" }}
     {{ partial "microhook-after-post-list.html" . }}
 {{ end }}
-<div class="post-nav">
-    {{ if $paginator.HasPrev }}
-    <span class="prev">
-        <a href="{{ $paginator.Prev.URL }}" title="Previous Page"><span class="arrow">← Newer Posts</span></a>
-    </span>
-    {{ end }}
-    {{ if $paginator.HasNext }}
-    <span class="next">
-        <a href="{{ $paginator.Next.URL }}"><span class="arrow">Older Posts →</span></a>
-    </span>
-    {{ end }}
-</div>
+
+{{ partial "pagination.html" . }}
+
 {{ end }}
 {{ end }}
