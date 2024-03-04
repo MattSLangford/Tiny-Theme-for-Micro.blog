@@ -144,7 +144,8 @@ nav a:visited,
 nav a:hover,
 a.conversation-on-mb,
 a.reply-on-mastodon,
-a.reply-by-email, a.read-more {
+a.reply-by-email,
+a.read-more {
 	text-decoration: none;
 	padding: 5px 10px;
 	border: 1px solid var(--link);
@@ -156,7 +157,8 @@ a.reply-by-email, a.read-more {
 nav a:hover,
 a.conversation-on-mb:hover,
 a.reply-on-mastodon:hover,
-a.reply-by-email:hover, a.read-more:hover {
+a.reply-by-email:hover,
+a.read-more:hover {
 	background: var(--link);
 	color: var(--button-text);
 }
@@ -332,7 +334,10 @@ p.note {
 	padding: 5px 10px;
 }
 
-p > code, li > code, span.tinylytics_hits, span.tinylytics_uptime {
+p>code,
+li>code,
+span.tinylytics_hits,
+span.tinylytics_uptime {
 	background: var(--code);
 	padding: 2px 4px;
 	font-size: 0.9em;
@@ -373,6 +378,7 @@ video {
 	opacity: 0.8;
 	cursor: not-allowed;
 }
+
 .tinylytics_webring {
 	align-items: center;
 	display: flex;
@@ -380,6 +386,7 @@ video {
 	gap: 3px;
 	justify-content: center;
 }
+
 a.tinylytics_webring {
 	text-decoration: none;
 }
@@ -396,6 +403,7 @@ a.tinylytics_webring {
 	font-size: 0.9em;
 	line-height: 1em;
 }
+
 pre {
 	overflow: auto;
 	padding: 1em;

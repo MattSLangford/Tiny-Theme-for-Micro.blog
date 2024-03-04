@@ -1,32 +1,32 @@
 <header class="site-header">
 	{{ if templates.Exists "partials/microhook-profile-photo.html" }}
-		{{ partial "microhook-profile-photo.html" . }}
+	{{ partial "microhook-profile-photo.html" . }}
 	{{ else }}
-		<a href="/"><img src="{{ .Site.Author.avatar }}" alt="{{ .Site.Title }} Profile Photo" class="profile_photo u-photo" width="80" height="80"></a>
+	<a href="/"><img src="{{ .Site.Author.avatar }}" alt="{{ .Site.Title }} Profile Photo" class="profile_photo u-photo" width="80" height="80"></a>
 	{{ end }}
 	{{ if templates.Exists "partials/microhook-title.html" }}
-		{{ partial "microhook-title.html" . }}
+	{{ partial "microhook-title.html" . }}
 	{{ else }}
-    <h1><a class="site-title p-name u-url" href="/">{{ .Site.Title }}</a></h1>
+	<h1><a class="site-title p-name u-url" href="/">{{ .Site.Title }}</a></h1>
 	{{ end }}
 	{{ if templates.Exists "partials/microhook-description.html" }}
-		{{ partial "microhook-description.html" . }}
+	{{ partial "microhook-description.html" . }}
 	{{ else }}
-    	<p class="description">{{ .Site.Params.itunes_description | safeHTML }}</p>
+	<p class="description">{{ .Site.Params.itunes_description | safeHTML }}</p>
 	{{ end }}
 	{{ if templates.Exists "partials/microhook-navigation.html" }}
-		{{ partial "microhook-navigation.html" . }}
+	{{ partial "microhook-navigation.html" . }}
 	{{ else }}
-    <nav class="site-nav">
-    	<ul>
-		{{ range .Site.Menus.main }}
+	<nav class="site-nav">
+		<ul>
+			{{ range .Site.Menus.main }}
 			{{ if .Page.Params.redirect_url }}
-				<li><a class="page-link {{ .Name }}" href="{{ .Page.Params.redirect_url }}">{{ .Name }}</a></li>
+			<li><a class="page-link {{ .Name }}" href="{{ .Page.Params.redirect_url }}">{{ .Name }}</a></li>
 			{{ else }}
-				<li><a class="page-link {{ .Name }}" href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
+			<li><a class="page-link {{ .Name }}" href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
 			{{ end }}
-		{{ end }}
+			{{ end }}
 		</ul>
-    </nav>
+	</nav>
 	{{ end }}
 </header>

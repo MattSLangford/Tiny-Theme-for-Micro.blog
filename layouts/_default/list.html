@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="archive h-feed">
 
-<h2 class="p-name">{{ .Title }}</h2>
+  <h2 class="p-name">{{ .Title }}</h2>
 
   <ul class="post-list">
     {{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") }}

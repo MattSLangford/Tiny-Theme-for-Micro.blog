@@ -28,23 +28,23 @@
   <title>
     {{ block "title" . }}
     {{ if .IsHome }}
-      {{ .Site.Title }}
+    {{ .Site.Title }}
     {{ else if .Title }}
-      {{ .Title }} | {{ .Site.Title }}
+    {{ .Title }} | {{ .Site.Title }}
     {{ else }}
-      {{ .Summary | plainify | truncate 40 }} | {{ .Site.Title }}
+    {{ .Summary | plainify | truncate 40 }} | {{ .Site.Title }}
     {{ end }}
     {{ end }}
   </title>
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="author" href="humans.txt" />
   {{ if templates.Exists "partials/microhook-uncss.html" }}
-    {{ partial "microhook-uncss.html" . }}
+  {{ partial "microhook-uncss.html" . }}
   {{ else }}
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   {{ end }}
   {{ partial "microblog_head.html" . }}
   {{ if templates.Exists "partials/microhook-head.html" }}
-    {{ partial "microhook-head.html" . }}
+  {{ partial "microhook-head.html" . }}
   {{ end }}
 </head>
