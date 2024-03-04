@@ -1,6 +1,10 @@
 {{ define "main" }}
 <div class="post h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
 
+  {{ if templates.Exists "partials/microhook-before-post.html" }}
+        {{ partial "microhook-before-post.html" . }}
+  {{ end }}
+
   <header class="post-header">
 
     {{ if templates.Exists "partials/microhook-post-byline.html" }}

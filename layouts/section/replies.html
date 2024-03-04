@@ -1,5 +1,10 @@
 {{ define "main" }}
 <div class="home h-feed">
+
+{{ if templates.Exists "partials/microhook-before-replies.html" }}
+	  {{ partial "microhook-before-replies.html" . }}
+{{ end }}
+
 <h2>Recent Replies</h2>
   <ul class="post-list">
 	{{ if .Site.Params.paginate_replies }}
@@ -39,5 +44,10 @@
 		{{ end }}
     {{ end }}
   </ul>
+
+{{ if templates.Exists "partials/microhook-after-replies.html" }}
+		{{ partial "microhook-after-replies.html" . }}
+  {{ end }}
+
 </div>
 {{ end }}
