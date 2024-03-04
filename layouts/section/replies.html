@@ -1,53 +1,55 @@
 {{ define "main" }}
 <div class="home h-feed">
 
-{{ if templates.Exists "partials/microhook-before-replies.html" }}
-	  {{ partial "microhook-before-replies.html" . }}
-{{ end }}
+	{{ if templates.Exists "partials/microhook-before-replies.html" }}
+	{{ partial "microhook-before-replies.html" . }}
+	{{ end }}
 
-<h2>Recent Replies</h2>
-  <ul class="post-list">
-	{{ if .Site.Params.paginate_replies }}
+	<h2>Recent Replies</h2>
+	<ul class="post-list">
+		{{ if .Site.Params.paginate_replies }}
 		{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
 		{{ $list := $paginator.Pages }}
 		{{ range $list  }}
-		  <li class="h-entry">
+		<li class="h-entry">
 			{{ if .Title }}
-				<h2 class="p-name"><a class ="post-title" href="{{ .Permalink }}">{{ .Title }}</a></h3>
-			{{ end }}
+			<h2 class="p-name"><a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a></h3>
+				{{ end }}
 
-			<a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>
+				<a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>
 
-			{{ if .Params.reply_to_url }} <div class="reply-to"> Replying to: {{ if eq .Params.reply_to_hostname "micro.blog" }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">@{{ .Params.reply_to_username }}</a> {{ else }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">{{ .Params.reply_to_hostname }}</a> {{ end }} </div> {{ end }}
+				{{ if .Params.reply_to_url }}
+				<div class="reply-to"> Replying to: {{ if eq .Params.reply_to_hostname "micro.blog" }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">@{{ .Params.reply_to_username }}</a> {{ else }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">{{ .Params.reply_to_hostname }}</a> {{ end }} </div> {{ end }}
 
-			<div class="e-content">
-				{{ .Content }}
-			</div>
-		  </li>
+				<div class="e-content">
+					{{ .Content }}
+				</div>
+		</li>
 		{{ end }}
-    {{ else }}
+		{{ else }}
 		{{ $list := first 25 (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
 		{{ range $list  }}
-		  <li class="h-entry">
+		<li class="h-entry">
 			{{ if .Title }}
-				<h2 class="p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+			<h2 class="p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
 			{{ end }}
 
 			<a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>
 
-			{{ if .Params.reply_to_url }} <div class="reply-to"> Replying to: {{ if eq .Params.reply_to_hostname "micro.blog" }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">@{{ .Params.reply_to_username }}</a> {{ else }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">{{ .Params.reply_to_hostname }}</a> {{ end }} </div> {{ end }}
+			{{ if .Params.reply_to_url }}
+			<div class="reply-to"> Replying to: {{ if eq .Params.reply_to_hostname "micro.blog" }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">@{{ .Params.reply_to_username }}</a> {{ else }} <a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">{{ .Params.reply_to_hostname }}</a> {{ end }} </div> {{ end }}
 
 			<div class="e-content">
 				{{ .Content }}
 			</div>
-		  </li>
+		</li>
 		{{ end }}
-    {{ end }}
-  </ul>
+		{{ end }}
+	</ul>
 
-{{ if templates.Exists "partials/microhook-after-replies.html" }}
-		{{ partial "microhook-after-replies.html" . }}
-  {{ end }}
+	{{ if templates.Exists "partials/microhook-after-replies.html" }}
+	{{ partial "microhook-after-replies.html" . }}
+	{{ end }}
 
 </div>
 {{ end }}

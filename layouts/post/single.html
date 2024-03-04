@@ -2,13 +2,13 @@
 <div class="post h-entry {{ range .Params.categories }} {{ . | urlize | lower }}{{ end }}">
 
   {{ if templates.Exists "partials/microhook-before-post.html" }}
-        {{ partial "microhook-before-post.html" . }}
+  {{ partial "microhook-before-post.html" . }}
   {{ end }}
 
   <header class="post-header">
 
     {{ if templates.Exists "partials/microhook-post-byline.html" }}
-        {{ partial "microhook-post-byline.html" . }}
+    {{ partial "microhook-post-byline.html" . }}
     {{ else }}
     <a href="{{ .Permalink }}" class="post-date u-url"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> ∞</a>
     {{ end }}
@@ -21,9 +21,9 @@
     {{ .Content }}
   </article>
 
-{{ if templates.Exists "partials/microhook-categories.html" }}
-      {{ partial "microhook-categories.html" . }}
-{{ else }}
+  {{ if templates.Exists "partials/microhook-categories.html" }}
+  {{ partial "microhook-categories.html" . }}
+  {{ else }}
   {{ if .Params.categories }}
   <ul class="post-tags">
     {{ range .Params.categories }} {{ $href := print (absURL "categories/") (urlize .) }}
@@ -31,35 +31,35 @@
     {{ end }}
   </ul>
   {{ end }}
-{{ end }}
+  {{ end }}
 
-{{ if templates.Exists "partials/microhook-after-post.html" }}
-    {{ partial "microhook-after-post.html" . }}
-{{ end }}
+  {{ if templates.Exists "partials/microhook-after-post.html" }}
+  {{ partial "microhook-after-post.html" . }}
+  {{ end }}
 
 </div>
 {{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") (templates.Exists "partials/plugin_tinylytics.html") (templates.Exists "partials/reply-on-mastodon.html")}}
 <ul class="reply-buttons">
-{{ if templates.Exists "partials/plugin_tinylytics.html" }}
-      <li><button class="tinylytics_kudos">Kudos</button></li>
-{{ end }}
-{{ if templates.Exists "partials/reply-by-email.html" }}
-    <li>{{ partial "reply-by-email.html" . }}</li>
-{{ end }}
-{{ if templates.Exists "partials/conversation-link.html" }}
+  {{ if templates.Exists "partials/plugin_tinylytics.html" }}
+  <li><button class="tinylytics_kudos">Kudos</button></li>
+  {{ end }}
+  {{ if templates.Exists "partials/reply-by-email.html" }}
+  <li>{{ partial "reply-by-email.html" . }}</li>
+  {{ end }}
+  {{ if templates.Exists "partials/conversation-link.html" }}
   <li>{{ partial "conversation-link.html" . }}</li>
-{{ end }}
-{{ if templates.Exists "partials/reply-on-mastodon.html" }}
+  {{ end }}
+  {{ if templates.Exists "partials/reply-on-mastodon.html" }}
   <li>{{ partial "reply-on-mastodon.html" . }}</li>
-{{ end }}
-{{ if templates.Exists "partials/microhook-share-button.html" }}
+  {{ end }}
+  {{ if templates.Exists "partials/microhook-share-button.html" }}
   {{ partial "microhook-share-button.html" . }}
-{{ end }}
-{{ end }}
+  {{ end }}
+  {{ end }}
 </ul>
 
 {{ if .Params.bluesky }}
-  <a class="u-syndication" {{ printf "href=%q" .Params.bluesky.url | safeHTMLAttr }} style="display: none;">Also on Bluesky</a>
+<a class="u-syndication" {{ printf "href=%q" .Params.bluesky.url | safeHTMLAttr }} style="display: none;">Also on Bluesky</a>
 {{ end }}
 
 {{ if .Site.Params.include_conversation }}
@@ -67,7 +67,7 @@
 {{ end }}
 
 {{ if templates.Exists "partials/microhook-after-comments.html" }}
-    {{ partial "microhook-after-comments.html" . }}
+{{ partial "microhook-after-comments.html" . }}
 {{ end }}
 
 {{ end }}
