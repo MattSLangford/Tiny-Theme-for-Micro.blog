@@ -1,7 +1,6 @@
 {{ if templates.Exists "partials/microhook-pagination.html" }}
     {{ partial "microhook-pagination.html" . }}
 {{ else }}
-{{ $pag := $.Paginator }}
 
 <div class="post-nav">
     {{ if $paginator.HasPrev }}
