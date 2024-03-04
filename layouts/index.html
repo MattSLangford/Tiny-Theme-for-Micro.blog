@@ -45,6 +45,9 @@
 {{ if templates.Exists "partials/microhook-after-post-list.html" }}
     {{ partial "microhook-after-post-list.html" . }}
 {{ end }}
+{{ if templates.Exists "partials/microhook-pagination.html" }}
+    {{ partial "microhook-pagination.html" . }}
+{{ else }}
 <div class="post-nav">
     {{ if $paginator.HasPrev }}
     <span class="prev">
@@ -57,5 +60,6 @@
     </span>
     {{ end }}
 </div>
+{{ end }}
 {{ end }}
 {{ end }}
