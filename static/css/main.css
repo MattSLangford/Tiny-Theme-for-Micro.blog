@@ -364,6 +364,9 @@ mark {
 	margin-bottom: 2em;
 }
 
+/* IFRAME FIX */
+iframe {max-width: 100%;}
+
 /* MAKES VIDEO EMBEDS THAT DON'T USE IFRAME RESPONSIVE. DOES NOT WORK WITH YOUTUBE. */
 video {
 	width: 100% !important;

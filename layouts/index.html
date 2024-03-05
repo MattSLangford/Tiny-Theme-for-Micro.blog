@@ -35,6 +35,9 @@
                 {{ .Content }}
             </div>
             {{ end }}
+            {{ if templates.Exists "partials/microhook-between-posts.html" }}
+            {{ partial "microhook-between-posts.html" . }}
+            {{ end }}
             {{ if .Params.bluesky }}
             <a class="u-syndication" {{ printf "href=%q" .Params.bluesky.url | safeHTMLAttr }} style="display: none;">Also on Bluesky</a>
             {{ end }}
