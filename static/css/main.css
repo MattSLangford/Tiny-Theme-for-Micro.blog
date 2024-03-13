@@ -503,6 +503,8 @@ form p {
 	text-decoration: none;
 }
 
-.blogroll li a span:after {
-	content: '↗';
+.blogroll li a:after {
+	content: ' ↗';
+	font-weight: 400;
+	color: var(--accent2);
 }
