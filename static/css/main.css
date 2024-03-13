@@ -486,3 +486,23 @@ form p {
 	color: white;
 	width: fit-content;
 }
+
+.blogroll li a {
+	color: var(--text);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.blogroll li a span {
+	color: var(--link);
+	font-weight: 400;
+	text-decoration: underline;
+}
+
+.blogroll li a span:hover {
+	text-decoration: none;
+}
+
+.blogroll li a span:after {
+	content: '↗';
+}
