@@ -1,1 +1,1 @@
-// This site is running Tiny 2.6.1 //
+// This site is running Tiny 2.6.2 //
