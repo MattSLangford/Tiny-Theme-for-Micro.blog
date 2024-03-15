@@ -18,20 +18,18 @@
             {{ end }}
             {{ if .Title }}
             <h2 class="post-title p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-
-              {{ $more := "<!--more-->" }} <!-- Define your "more" tag -->
-              {{ if in .Content $more }} <!-- Check if the "more" tag exists in the content -->
-                {{ $parts := split .Content $more }} <!-- Split the content at the "more" tag -->
-                <div class="p-summary">
-                {{ $summary := index $parts 0 }} <!-- Get the content before the "more" tag -->
-                {{ $summary | safeHTML }} <!-- Render the summary with HTML -->
-                <p><a class="read-more" href="{{ .Permalink }}">{{ if templates.Exists "partials/summary.html" }}{{ .Site.Params.read_more_text | safeHTML }}{{ else }}Read More →{{ end }}</a></p>
-                </div>
-              {{ else }}
-                {{ .Content | safeHTML }} <!-- If no "more" tag, just display the full content -->
-              {{ end }}
+            {{ if templates.Exists "partials/summary.html" }}
+            <div class="p-summary">
+                {{ .Summary | safeHTML }}
+                {{ if .Truncated }}
+                <p><a class="read-more" href="{{ .Permalink }}">{{ .Site.Params.read_more_text | safeHTML }}</a></p>
+                {{ end }}
             </div>
-
+            {{ else }}
+            <div class="e-content">
+                {{ .Content }}
+            </div>
+            {{ end }}
             {{ else }}
             <div class="e-content">
                 {{ .Content }}
