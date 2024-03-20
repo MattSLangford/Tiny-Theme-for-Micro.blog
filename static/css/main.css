@@ -10,7 +10,7 @@
 	--button-text: #ffffff;
 	--blockquote: #fffee0;
 	--field: #fffee0;
-	--note: #FEF770;
+	--note: #fffee0;
 	--mark: #FFFF99;
 }
 
@@ -329,9 +329,10 @@ footer .attribution {
 
 p.note {
 	background: var(--note);
-	border-radius: 5px;
-	font-weight: bold;
+	border-radius: 0 5px 5px 0;
 	padding: 5px 10px;
+	border-left: solid 3px var(--mark);
+	font-style: italic;
 }
 
 p>code,
