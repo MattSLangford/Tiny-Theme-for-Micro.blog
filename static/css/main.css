@@ -280,7 +280,7 @@ sup a {
 }
 
 .microblog_post {
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 	padding: 1em;
 	border: 1px solid var(--code);
 	border-radius: 5px;
