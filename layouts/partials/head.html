@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="twitter:card" content="summary">
   {{ with .Title }}
   <meta name="twitter:title" content="{{ . }}">
@@ -11,7 +11,7 @@
   <meta property="og:title" content="{{ .Site.Title }}">
   {{ end }}
   {{ if .IsHome }}
-  <meta name="twitter:description" content="{{ .Site.Params.itunes_description | truncate 60 }}">
+  <meta name="twitter:description" content="{{ .Site.Params.itunes_description | truncate 125 }}">
   <meta name="og:description" content="{{ .Site.Params.itunes_description | truncate 60 }}">
   <meta name="description" content="{{ .Site.Params.itunes_description }}">
   <meta name="twitter:image" content="{{ .Site.Author.avatar }}">
