@@ -10,10 +10,8 @@
     <div class="wrapper">
       {{ block "main" . }}{{ end }}
     </div>
-    {{ if templates.Exists "partials/microhook-sidebar.html" }}
-      <div class="sidebar">
-        {{ partial "microhook-sidebar.html" . }}
-      </div>
+    {{ if templates.Exists "partials/private-microhook-sidebar-blogroll.html" }}
+        {{ partial "private-microhook-sidebar-blogroll.html" . }}
     {{ end }}
   </div>
   {{ partial "footer.html" . }}
