@@ -11,7 +11,9 @@
       {{ block "main" . }}{{ end }}
     </div>
     {{ if templates.Exists "partials/microhook-sidebar.html" }}
-    {{ partial "microhook-sidebar.html" . }}
+      <div class="sidebar">
+        {{ partial "microhook-sidebar.html" . }}
+      </div>
     {{ end }}
   </div>
   {{ partial "footer.html" . }}
