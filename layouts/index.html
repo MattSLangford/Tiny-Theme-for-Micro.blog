@@ -18,33 +18,30 @@
             {{ end }}
             {{ if .Title }}
                 <h2 class="post-title p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                    {{ if in .RawContent "<!--more-->" }} <!-- Check for 'more' tag -->
+                    {{ if in .RawContent "<!--more-->" }}
                     <div class="p-summary">
-                        {{ $splitContents := split .RawContent "<!--more-->" }} <!-- Split content at 'more' tag -->
-                        {{ index $splitContents 0 | markdownify }} <!-- Render HTML for content before 'more' tag -->
+                        {{ $splitContents := split .RawContent "<!--more-->" }}
+                        {{ index $splitContents 0 | markdownify }}
                         <p><a class="read-more" href="{{ .Permalink }}">
                             {{ if templates.Exists "partials/microhook-read-more-text.html" }}
                             {{ partial "microhook-read-more-text.html" . }}
                             {{ else }}
                             Read More →
                             {{ end }}
-                        </a></p> <!-- 'Read more' link -->
+                        </a></p>
                     </div>
                     {{ else }}
                     <div class="e-content">
-                        {{ .Content }} <!-- Show full content if no 'more' tag is present -->
+                        {{ .Content }}
                     </div>
                     {{ end }}
             {{ else }}
                 <div class="e-content">
-                    {{ .Content }} <!-- Always show full content for posts without titles -->
+                    {{ .Content }}
                 </div>
             {{ end }}
             {{ if templates.Exists "partials/microhook-below-post-in-list.html" }}
             {{ partial "microhook-below-post-in-list.html" . }}
-            {{ end }}
-            {{ if .Params.bluesky }}
-            <a class="u-syndication" {{ printf "href=%q" .Params.bluesky.url | safeHTMLAttr }} style="display: none;">Also on Bluesky</a>
             {{ end }}
         </div>
         {{ end }}
