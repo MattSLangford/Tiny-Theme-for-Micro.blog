@@ -25,8 +25,7 @@
   <meta name="twitter:image" content="{{ . }}">
   <meta property="og:image" content="{{ . }}">
   {{ end }}
-  <title>{{ block "title" . }}{{ if .IsHome }}{{ .Site.Title }}{{ else if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ .Summary | plainify | truncate 40 | safeHTML }} | {{ .Site.Title }}{{ end }}{{ end }}
-  </title>
+  <title>{{ block "title" . }}{{ if .IsHome }}{{ .Site.Title }}{{ else if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ .Summary | plainify | truncate 40 | safeHTML }} | {{ .Site.Title }}{{ end }}{{ end }}</title>
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="author" href="humans.txt" />
   {{ if templates.Exists "partials/microhook-uncss.html" }}
