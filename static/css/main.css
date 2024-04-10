@@ -13,7 +13,7 @@
 	--aside: #e0f7fa;
 	--aside-border: #0097a7;
 	--note: #e8f5e9;
-	--note-border: #43a047;
+	--note-border: #d5e1d6;
 	--alert: #ffebee;
 	--alert-border: #d32f2f;
 	--field: #fffee0;
@@ -33,12 +33,12 @@
 		--button-text: #282a36;
 		--blockquote: #44475a;
 		--blockquote-border: ;
-		--aside: ;
-		--aside-border: ;
+		--aside: #37474f;
+		--aside-border: #0097a7;
 		--note: #44475a;
-		--note-border: ;
-		--alert: ;
-		--alert-border: ;
+		--note-border: #43a047;
+		--alert: #573737;
+		--alert-border: #d32f2f;
 		--field: #44475a;
 		--mark: #FFFF99;
 	}
@@ -287,7 +287,7 @@ aside, .aside {
 .alert {
 	background: var(--alert);
 	border-left: 4px solid var(--alert-border);
-	font-style: bold;
+	font-weight: bold;
 }
 
 div.highlight div {
