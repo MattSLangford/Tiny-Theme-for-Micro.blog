@@ -9,8 +9,14 @@
 	--code: #e3e3e3;
 	--button-text: #ffffff;
 	--blockquote: #fffee0;
+	--blockquote-border: #e5d600;
+	--aside: #e0f7fa;
+	--aside-border: #0097a7;
+	--note: #e8f5e9;
+	--note-border: #43a047;
+	--alert: #ffebee;
+	--alert-border: #d32f2f;
 	--field: #fffee0;
-	--note: #fffee0;
 	--mark: #FFFF99;
 }
 
@@ -26,8 +32,14 @@
 		--code: #44475a;
 		--button-text: #282a36;
 		--blockquote: #44475a;
-		--field: #44475a;
+		--blockquote-border: ;
+		--aside: ;
+		--aside-border: ;
 		--note: #44475a;
+		--note-border: ;
+		--alert: ;
+		--alert-border: ;
+		--field: #44475a;
 		--mark: #FFFF99;
 	}
 }
