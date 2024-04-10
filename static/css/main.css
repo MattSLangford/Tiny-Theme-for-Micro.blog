@@ -286,7 +286,7 @@ aside, .aside {
 
 @keyframes blinkBorder {
   0%, 100% { border-color: var(--alert-border); } /* Default border color */
-  50% { border-color: black; } /* Blink to black */
+  50% { border-color: var(--alert); } /* Blink to black */
 }
 
 .alert {
