@@ -280,7 +280,7 @@ aside, .aside {
 
 .note {
 	background: var(--note);
-	border-left: 4px solid var(--note-border-border);
+	border-left: 4px solid var(--note-border);
 	font-style: italic;
 }
 
