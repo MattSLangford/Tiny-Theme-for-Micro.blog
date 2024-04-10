@@ -32,13 +32,13 @@
 		--code: #44475a;
 		--button-text: #282a36;
 		--blockquote: #44475a;
-		--blockquote-border: ;
-		--aside: #37474f;
-		--aside-border: #0097a7;
-		--note: #44475a;
-		--note-border: #43a047;
-		--alert: #573737;
-		--alert-border: #d32f2f;
+		--blockquote-border: #6272a4;
+		--aside: #6272a4;
+		--aside-border: #7797b7	;
+		--note: #50fa7b;
+		--note-border: #5aff85;
+		--alert: #ff5555;
+		--alert-border: #ff6e6e;
 		--field: #44475a;
 		--mark: #FFFF99;
 	}
