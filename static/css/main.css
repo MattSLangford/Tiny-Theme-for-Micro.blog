@@ -284,10 +284,16 @@ aside, .aside {
 	font-style: italic;
 }
 
+@keyframes blinkBorder {
+  0%, 100% { border-color: var(--alert-border); } /* Default border color */
+  50% { border-color: black; } /* Blink to black */
+}
+
 .alert {
 	background: var(--alert);
 	border-left: 4px solid var(--alert-border);
 	font-weight: bold;
+	animation: blinkBorder 2s infinite ease-in-out;
 }
 
 div.highlight div {
