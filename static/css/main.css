@@ -246,26 +246,48 @@ ul.post-list a.u-url {
 	text-decoration: none;
 }
 
-blockquote {
+blockquote, aside, .aside, .note, .alert, .blockquote {
 	padding: 1em;
-	background: var(--blockquote);
-	border-radius: 5px;
+	border-left: 4px solid;
+	border-radius: 0 5px 5px 0;
 	font-size: 0.9em;
 	margin: 1em;
 }
 
-blockquote p:last-of-type {
+blockquote, .blockquote {
+	background: var(--blockquote);
+	border-left: 4px solid var(--blockquote-border);
+}
+
+blockquote p:last-of-type, .blockquote p:last-of-type, aside p:last-of-type, .aside p:last-of-type, .alert p:last-of-type, .note p:last-of-type {
 	margin-bottom: 0;
 }
 
-blockquote p:first-of-type {
+blockquote p:first-of-type, .blockquote p:first-of-type, aside p:first-of-type, .aside p:first-of-type, .alert p:first-of-type, .note p:first-of-type {
 	margin-top: 0;
 }
 
-blockquote cite {
+blockquote cite, aside cite, .aside cite {
 	display: block;
 	text-align: right;
 	margin-top: 1em;
+}
+
+aside, .aside {
+	background: var(--aside);
+	border-left: 4px solid var(--aside-border);
+}
+
+.note {
+	background: var(--note);
+	border-left: 4px solid var(--note-border-border);
+	font-style: italic;
+}
+
+.alert {
+	background: var(--alert);
+	border-left: 4px solid var(--alert-border);
+	font-style: bold;
 }
 
 div.highlight div {
@@ -343,14 +365,6 @@ footer .attribution {
 
 .full-archives {
 	overflow-wrap: anywhere;
-}
-
-p.note {
-	background: var(--note);
-	border-radius: 0 5px 5px 0;
-	padding: 5px 10px;
-	border-left: solid 3px var(--mark);
-	font-style: italic;
 }
 
 p>code,
