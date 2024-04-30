@@ -539,3 +539,59 @@ form p {
 .blogroll li a span:hover {
 	text-decoration: none;
 }
+
+/* Adaptive Photo Layout Feature */
+
+.adaptive_photo_layout ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Flexible grid items */
+	gap: 10px; /* Adds spacing between items */
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	align-items: start; /* Aligns items at the top of the container */
+}
+
+.adaptive_photo_layout li {
+	display: block; /* Block display for better control over individual items */
+	width: 100%;
+	overflow: hidden; /* Keeps images within the boundaries */
+	border-radius:5px;
+}
+
+.adaptive_photo_layout img {
+	width: 100%; /* Ensures the image scales up to the container width */
+	height: auto; /* Allows height to adjust naturally, preserving the image's aspect ratio */
+	object-fit: cover; /* Covers the area, ensures no white space around images */
+	vertical-align: bottom;
+	border-radius: 0;
+	transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for transform and opacity */
+}
+
+.adaptive_photo_layout img:hover {
+	transform: scale(1.05); /* Slightly enlarges the image */
+	opacity: 0.9; /* Slightly reduces the opacity */
+}
+
+@media (max-aspect-ratio: 1/1) {
+	.adaptive_photo_layout li {
+		height: auto; /* Auto height for more natural flow */
+	}
+}
+
+@media (max-height: 480px) {
+	.adaptive_photo_layout li {
+		height: auto; /* Consistent with masonry style, allowing natural height */
+	}
+}
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+	.adaptive_photo_layout ul {
+		grid-template-columns: 100%; /* One column layout for very narrow screens */
+	}
+
+	.adaptive_photo_layout li {
+		height: auto;
+	}
+}
+
