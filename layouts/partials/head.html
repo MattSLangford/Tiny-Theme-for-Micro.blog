@@ -33,6 +33,9 @@
   {{ else }}
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   {{ end }}
+  {{ if templates.Exists "partials/microhook-adaptive-photo-layout.html" }}
+  <link rel="stylesheet" href="{{ "css/adaptive.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
+  {{ end }}
   {{ partial "microblog_head.html" . }}
   {{ if templates.Exists "partials/microhook-head.html" }}
   {{ partial "microhook-head.html" . }}
