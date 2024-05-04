@@ -24,13 +24,11 @@
   {{ if templates.Exists "partials/microhook-categories.html" }}
   {{ partial "microhook-categories.html" . }}
   {{ else }}
-{{ if .Params.categories }}
+  {{ if .Params.categories }}
   <ul class="post-tags">
-      {{ range .Params.categories }}
-      <!-- Get the page object for each category -->
-      {{ $categoryPage := ($.Site.GetPage (print "categories/" .)) }}
-      <li><a href="{{ $categoryPage.Permalink }}">{{ $categoryPage.Title }}</a></li>
-      {{ end }}
+    {{ range .Params.categories }} {{ $href := print (absURL "categories/") (urlize .) }}
+    <li><a href="{{ $href }}">#{{ . }}</a></li>
+    {{ end }}
   </ul>
   {{ end }}
   {{ end }}
