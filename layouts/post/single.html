@@ -66,4 +66,8 @@
 {{ partial "microhook-after-comments.html" . }}
 {{ end }}
 
+{{ if templates.Exists "partials/related.html" }}
+{{ partial "related.html" . }}
+{{ end }}
+
 {{ end }}

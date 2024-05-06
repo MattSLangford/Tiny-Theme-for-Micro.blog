@@ -1,0 +1,21 @@
+{{ $related := .Site.RegularPages.Related . | first 5 }}
+{{ with $related }}
+  <h2 class="related-content">Related</h2>
+  <ul>
+    {{ range $i, $p := . }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        {{ with .HeadingsFiltered }}
+          <ul>
+            {{ range . }}
+              {{ $link := printf "%s#%s" $p.RelPermalink .ID | safeURL }}
+              <li>
+                <a href="{{ $link }}">{{ .Title }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}
