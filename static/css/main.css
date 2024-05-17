@@ -540,6 +540,14 @@ form p {
 	text-decoration: none;
 }
 
+.microblog_reply_textarea textarea {
+	width: calc(100% - 2em);
+	border-radius: 5px;
+	border: 1px solid var(--code);
+	padding: 1em;
+	font-size: 1em;
+}
+
 /* Adaptive Photo Layout Feature */
 
 .adaptive_photo_layout ul {
