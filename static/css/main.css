@@ -548,6 +548,10 @@ form p {
 	font-size: 1em;
 }
 
+.microblog_reply_button {
+	margin-top: 0;
+}
+
 /* Adaptive Photo Layout Feature */
 
 .adaptive_photo_layout ul {
