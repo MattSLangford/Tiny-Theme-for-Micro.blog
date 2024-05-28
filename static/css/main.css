@@ -357,6 +357,10 @@ sup a {
 	text-decoration: none;
 }
 
+.microblog_narration_button {
+	color: var(--audio-link);
+}
+
 footer {
 	margin-top: 2em;
 	text-align: center;
