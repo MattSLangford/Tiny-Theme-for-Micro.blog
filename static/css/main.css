@@ -361,6 +361,10 @@ sup a {
 	color: var(--audio-link);
 }
 
+.microblog_narration_button span {
+	vertical-align: baseline !important;
+}
+
 footer {
 	margin-top: 2em;
 	text-align: center;
