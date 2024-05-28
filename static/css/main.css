@@ -18,6 +18,7 @@
 	--alert-border: #d32f2f;
 	--field: #fffee0;
 	--mark: #FFFF99;
+	--audio-link: #d32f2f;
 }
 
 /* Dark mode */
@@ -41,6 +42,7 @@
 		--alert-border: #ff6e6e;
 		--field: #44475a;
 		--mark: #FFFF99;
+		--audio-link: #ff6e6e;
 	}
 }
 
