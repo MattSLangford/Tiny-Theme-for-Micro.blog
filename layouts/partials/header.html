@@ -19,12 +19,18 @@
 	{{ else }}
 	<nav class="site-nav">
 		<ul>
+			{{ if templates.Exists "partials/microhook-inline-nav-begin.html" }}
+			{{ partial "microhook-inline-nav-begin.html" . }}
+			{{ end }}
 			{{ range .Site.Menus.main }}
 			{{ if .Page.Params.redirect_url }}
 			<li><a class="page-link {{ .Name }}" href="{{ .Page.Params.redirect_url }}">{{ .Name }}</a></li>
 			{{ else }}
 			<li><a class="page-link {{ .Name }}" href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
 			{{ end }}
+			{{ end }}
+			{{ if templates.Exists "partials/microhook-inline-nav-end.html" }}
+			{{ partial "microhook-inline-nav-end.html" . }}
 			{{ end }}
 		</ul>
 	</nav>
