@@ -420,6 +420,8 @@ iframe {max-width: 100%;}
 video {
 	width: 100% !important;
 	height: auto !important;
+	background: var(--code);
+	border-radius: 5px;
 }
 
 /* Styling specific to Tinylytics Plugin */
