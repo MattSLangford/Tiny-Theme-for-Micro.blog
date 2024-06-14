@@ -32,6 +32,10 @@
   {{ partial "microhook-uncss.html" . }}
   {{ else }}
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
+  {{ if templates.Exists "partials/microhook-unfontawesome.html" }}
+  {{ else }}
+  <link rel="stylesheet" href="{{ "css/fontawesome.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
+  {{ end }}
   {{ end }}
   {{ partial "microblog_head.html" . }}
   {{ if templates.Exists "partials/microhook-head.html" }}
