@@ -34,9 +34,7 @@
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   {{ if templates.Exists "partials/microhook-unfontawesome.html" }}
   {{ else }}
-  <link rel="stylesheet" href="{{ "css/fontawesome.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
-  <link rel="stylesheet" href="{{ "css/brands.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
-  <link rel="stylesheet" href="{{ "css/solid.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
+  <link rel="stylesheet" href="{{ "css/all.min.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   {{ end }}
   {{ end }}
   {{ partial "microblog_head.html" . }}
