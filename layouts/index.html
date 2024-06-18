@@ -19,21 +19,24 @@
             {{ if .Title }}
                 <h2 class="post-title p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
                     {{ if in .RawContent "<!--more-->" }}
-                    <div class="p-summary">
-                        {{ $splitContents := split .RawContent "<!--more-->" }}
-                        {{ index $splitContents 0 | markdownify }}
-                        <p><a class="read-more" href="{{ .Permalink }}">
-                            {{ if templates.Exists "partials/microhook-read-more-text.html" }}
-                            {{ partial "microhook-read-more-text.html" . }}
-                            {{ else }}
-                            Read More →
-                            {{ end }}
-                        </a></p>
-                    </div>
+                        <div class="p-summary">
+                            {{ $splitContents := split .RawContent "<!--more-->" }}
+                            {{ $summary := index $splitContents 0 }}
+                            {{ $summary := replaceRE "\\[\\^.*?\\]" "" $summary }}
+                            {{ $summary := replaceRE "\\n\\[\\^.*?\\]:.*" "" $summary }}
+                            {{ $summary | markdownify }}
+                            <p><a class="read-more" href="{{ .Permalink }}">
+                                {{ if templates.Exists "partials/microhook-read-more-text.html" }}
+                                {{ partial "microhook-read-more-text.html" . }}
+                                {{ else }}
+                                Read More →
+                                {{ end }}
+                            </a></p>
+                        </div>
                     {{ else }}
-                    <div class="e-content">
-                        {{ .Content }}
-                    </div>
+                        <div class="e-content">
+                            {{ .Content }}
+                        </div>
                     {{ end }}
             {{ else }}
                 <div class="e-content">
