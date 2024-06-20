@@ -5,7 +5,9 @@
 <div class="archive h-feed">
 
   <h2 class="p-name">{{ .Title }}</h2>
-
+{{ if templates.Exists "partials/microhook-category-header.html" }}
+  {{ partial "microhook-category-header.html" . }}
+{{ end }}
   <ul class="post-list">
     {{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") }}
     {{ range .Paginator.Pages  }}
