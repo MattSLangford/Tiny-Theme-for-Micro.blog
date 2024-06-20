@@ -2,7 +2,7 @@
 {{ if templates.Exists "partials/microhook-archive-post-list.html" }}
 {{ partial "microhook-archive-post-list.html" . }}
 {{ else }}
-<div class="archive h-feed">
+<div class="archive h-feed {{ .Title }}">
 
   <h2 class="p-name">{{ .Title }}</h2>
 {{ if templates.Exists "partials/microhook-category-header.html" }}
