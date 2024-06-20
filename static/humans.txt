@@ -1,17 +1,32 @@
+/* CONTENT AUTHORS */
+The content and opinions expressed on this site belong exclusively to the site owner and content authors. This file includes details about the designer and the tools used, but does not include information about individual (or group) site owners.
+
 /* DESIGNER */
 
 Name: Matt Langford
-Web: mattlangford.com
-Contact: hi [at] matt langford dot com
+Web: https://mattlangford.com
+Contact: https://letterbird.co/matt
 Twitter/X: @mattslangford
 Micro.blog: @mtt
 Mastodon: @matt@mattlangford.com
-From: Louisiana, USA
+From: USA
+
+/* THANKS */
+
+- https://micro.blog/otaviocc
+- https://micro.blog/jsonbecker
+- https://micro.blog/sod
+- https://micro.blog/manton
+- https://micro.blog/vincent
+- https://micro.blog/kalena
 
 /* SITE */
 
 Standards: HTML5, CSS3
 Software: Hugo, Git, Nova
+Theme: Tiny Theme for Micro.blog
+Version: 2.8.1
 Design Repo: https://github.com/MattSLangford/Tiny-Theme-for-Micro.blog
 Theme Documentation Site: https://tiny.micro.blog
-Hosted by: https://micro.blog
+Hosted by: https://micro.blog by https://manton.org
+Leave a Tip: https://www.buymeacoffee.com/mattlangford
