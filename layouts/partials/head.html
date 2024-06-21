@@ -27,7 +27,6 @@
   {{ end }}
   <title>{{ block "title" . }}{{ if .IsHome }}{{ .Site.Title }}{{ else if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ delimit (split .Summary " " | first 5) " " }} … | {{ .Site.Title }}{{ end }}{{ end }}</title>
   <link rel="canonical" href="{{ .Permalink }}">
-  <link rel="author" href="humans.txt" />
   {{ if templates.Exists "partials/microhook-uncss.html" }}
   {{ partial "microhook-uncss.html" . }}
   {{ else }}
