@@ -1,7 +1,11 @@
-/* CONTENT AUTHORS */
-The content and opinions expressed on this site belong exclusively to the site owner and content authors. This file includes details about the designer and the tools used, but does not include information about individual (or group) site owners.
+/* SITE OWNER AND AUTHORS */
+Name:
+Web:
+Contact:
+Micro.blog:
+From:
 
-/* DESIGNER */
+/* DESIGNER/DEVELOPER */
 
 Name: Matt Langford
 Web: https://mattlangford.com
@@ -11,16 +15,7 @@ Micro.blog: @mtt
 Mastodon: @matt@mattlangford.com
 From: USA
 
-/* THANKS */
-
-- https://micro.blog/otaviocc
-- https://micro.blog/jsonbecker
-- https://micro.blog/sod
-- https://micro.blog/manton
-- https://micro.blog/vincent
-- https://micro.blog/kalena
-
-/* SITE */
+/* SITE INFORMATION */
 
 Standards: HTML5, CSS3
 Software: Hugo, Git, Nova
@@ -28,5 +23,7 @@ Theme: Tiny Theme for Micro.blog
 Version: 2.8.1
 Design Repo: https://github.com/MattSLangford/Tiny-Theme-for-Micro.blog
 Theme Documentation Site: https://tiny.micro.blog
-Hosted by: https://micro.blog by https://manton.org
-Leave a Tip: https://www.buymeacoffee.com/mattlangford
+Host: https://micro.blog by https://manton.org
+
+
+// Humans.txt is an initiative for knowing the people behind a website. It's a TXT file that contains information about the different people who have contributed to building a website. For more information, visit https://humanstxt.org. //
