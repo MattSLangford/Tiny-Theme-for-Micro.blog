@@ -61,6 +61,10 @@
   {{ end }}
 </ul>
 
+{{ if templates.Exists "partials/microhook-before-comments.html" }}
+{{ partial "microhook-before-comments.html" . }}
+{{ end }}
+
 {{ if .Site.Params.include_conversation }}
 <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
 {{ end }}
