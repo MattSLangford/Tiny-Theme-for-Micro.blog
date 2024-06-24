@@ -16,7 +16,7 @@ From: USA
 Standards: HTML5, CSS3
 Software: Hugo, Git, Nova
 Theme: Tiny Theme for Micro.blog
-Version: 2.8.2
+Version: 2.8.3
 Design Repo: https://github.com/MattSLangford/Tiny-Theme-for-Micro.blog
 Theme Documentation Site: https://tiny.micro.blog
 Hosted at: https://micro.blog by https://manton.org
