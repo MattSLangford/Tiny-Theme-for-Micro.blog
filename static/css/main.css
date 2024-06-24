@@ -348,6 +348,7 @@ sup a {
 
 .microblog_text img {
 	max-width: 100%;
+	border-radius: 5px;
 }
 
 .microblog_time a,
