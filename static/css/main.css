@@ -248,6 +248,13 @@ ul.post-list a.u-url {
 	text-decoration: none;
 }
 
+.callout {
+	background: var(--code);
+	padding: 1em;
+	border-radius: 5px;
+	margin-bottom: 2em;
+}
+
 blockquote, aside, .aside, .note, .alert, .blockquote {
 	padding: 1em;
 	border-left: 4px solid;
@@ -380,6 +387,15 @@ footer .attribution {
 	display: none;
 }
 
+footer i {
+	font-size: 1.5em;
+	padding: 0 5px;
+}
+
+footer a i:hover {
+	color: var(--text);
+}
+
 .full-archives {
 	overflow-wrap: anywhere;
 }
@@ -393,6 +409,11 @@ span.tinylytics_uptime {
 	font-size: 0.9em;
 	border-radius: 5px;
 	font-family: var(--font_monospace_code);
+}
+
+.tinylytics_countries {
+	font-size: 1.5em;
+	line-height: 1em;
 }
 
 mark {
