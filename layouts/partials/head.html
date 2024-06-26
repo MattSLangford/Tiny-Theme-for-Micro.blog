@@ -30,8 +30,7 @@
   {{ if templates.Exists "partials/microhook-uncss.html" }}
   {{ partial "microhook-uncss.html" . }}
   {{ else }}
-  {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $css.Permalink }}">
+  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   {{ end }}
   {{ if templates.Exists "partials/microhook-unfontawesome.html" }}
   {{ else }}
