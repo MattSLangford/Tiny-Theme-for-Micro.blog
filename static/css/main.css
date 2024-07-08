@@ -1,0 +1,642 @@
+/* Light mode */
+:root {
+	--text: #000000;
+	--link: #1565C0;
+	--link_visited: #1565C0;
+	--accent1: #333333;
+	--accent2: #666666;
+	--background: #ffffff;
+	--code: #e3e3e3;
+	--button-text: #ffffff;
+	--blockquote: #fffee0;
+	--blockquote-border: #e5d600;
+	--aside: #e0f7fa;
+	--aside-border: #0097a7;
+	--note: #e8f5e9;
+	--note-border: #d5e1d6;
+	--alert: #ffebee;
+	--alert-border: #d32f2f;
+	--field: #fffee0;
+	--mark: #FFFF99;
+	--audio-link: #d32f2f;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text: #f8f8f2;
+		--link: #8be9fd;
+		--link_visited: #8be9fd;
+		--accent1: #f8f8f2;
+		--accent2: #f8f8f2;
+		--background: #282a36;
+		--code: #44475a;
+		--button-text: #282a36;
+		--blockquote: #44475a;
+		--blockquote-border: #6272a4;
+		--aside: #6272a4;
+		--aside-border: #7797b7	;
+		--note: #3f444a;
+		--note-border: #4f545a;
+		--alert: #ff5555;
+		--alert-border: #ff6e6e;
+		--field: #44475a;
+		--mark: #FFFF99;
+		--audio-link: #ff6e6e;
+	}
+}
+
+/* Font stacks */
+:root {
+	--font_system_ui: system-ui, sans-serif;
+	--font_transitional: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+	--font_old_style: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+	--font_humanist: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+	--font_geometric_humanist: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+	--font_classical_humanist: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
+	--font_neo_grotesque: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+	--font_monospace_slab_serif: 'Nimbus Mono PS', 'Courier New', monospace;
+	--font_monospace_code: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+	--font_industrial: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+	--font_rounded_sans: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+	--font_slab_serif: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+	--font_antique: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
+	--font_didone: Didot, 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', P052, Sylfaen, serif;
+	--font_handwritten: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+}
+
+body {
+	max-width: 40em;
+	margin: 2em auto;
+	font-family: var(--font_system_ui);
+	font-size: 18px;
+	padding: 0 1em;
+	line-height: 1.6;
+	background-color: var(--background);
+	color: var(--text);
+}
+
+header {
+	margin-bottom: 2em;
+}
+
+.post-header {
+	margin-bottom: 0;
+}
+
+header h1 a,
+header h1 a:visited {
+	text-decoration: none;
+	color: var(--text);
+}
+
+header h1 a:hover {
+	color: var(--accent1);
+	text-decoration: none;
+}
+
+header p {
+	margin-top: 0;
+}
+
+a {
+	color: var(--link);
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:visited {
+	color: var(--link_visited)
+}
+
+a.post-date {
+	font-size: 0.8em;
+	color: var(--link);
+	text-decoration: none;
+}
+
+span.post-date {
+	font-size: 0.8em;
+}
+
+a.post-date:hover {
+	text-decoration: none;
+}
+
+.e-content {
+	margin-bottom: 2em;
+	overflow-wrap: anywhere;
+}
+
+.e-content p:first-of-type,
+article p:first-of-type {
+	margin-top: 0;
+}
+
+img.profile_photo {
+	border-radius: 80px;
+}
+
+nav ul,
+ul.reply-buttons {
+	list-style-type: none;
+	padding: 0;
+}
+
+nav ul li,
+ul.reply-buttons li {
+	display: inline;
+	margin-right: 0.2em;
+	line-height: 2.15em;
+	white-space: nowrap;
+}
+
+nav a,
+nav a:visited,
+nav a:hover,
+a.conversation-on-mb,
+a.reply-on-mastodon,
+a.reply-by-email,
+a.read-more {
+	text-decoration: none;
+	padding: 5px 10px;
+	border: 1px solid var(--link);
+	color: var(--link);
+	border-radius: 5px;
+	font-size: 0.9em;
+}
+
+nav a:hover,
+a.conversation-on-mb:hover,
+a.reply-on-mastodon:hover,
+a.reply-by-email:hover,
+a.read-more:hover {
+	background: var(--link);
+	color: var(--button-text);
+}
+
+button {
+	cursor: pointer;
+}
+
+.reply-to {
+	background: var(--code);
+	border-radius: 5px;
+	padding: 0 .333em;
+	display: inline-block;
+	font-size: 0.8em;
+}
+
+header h1 {
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1.2em;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+.post-nav {
+	margin-top: 2.5em;
+	margin-bottom: 2.5em;
+	text-align: center;
+}
+
+.post-nav span {
+	padding: 0 5px;
+}
+
+.post-nav a:visited {
+	color: var(--link);
+}
+
+.post-meta {
+	color: var(--accent2);
+}
+
+article img,
+.e-content img,
+.p-summary img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+
+ul.post-tags li {
+	display: inline;
+	font-size: 0.8em;
+}
+
+ul.post-tags,
+ul.post-list {
+	padding-left: 0;
+}
+
+ul.post-list {
+	list-style-type: none;
+}
+
+ul.post-list a.u-url {
+	text-decoration: none;
+}
+
+.callout {
+	background: var(--code);
+	padding: 1em;
+	border-radius: 5px;
+	margin-bottom: 2em;
+}
+
+blockquote, aside, .aside, .note, .alert, .blockquote {
+	padding: 1em;
+	border-left: 4px solid;
+	border-radius: 0 5px 5px 0;
+	font-size: 0.9em;
+	margin: 1em;
+}
+
+blockquote, .blockquote {
+	background: var(--blockquote);
+	border-left: 4px solid var(--blockquote-border);
+}
+
+blockquote p:last-of-type, .blockquote p:last-of-type, aside p:last-of-type, .aside p:last-of-type, .alert p:last-of-type, .note p:last-of-type {
+	margin-bottom: 0;
+}
+
+blockquote p:first-of-type, .blockquote p:first-of-type, aside p:first-of-type, .aside p:first-of-type, .alert p:first-of-type, .note p:first-of-type {
+	margin-top: 0;
+}
+
+blockquote cite, aside cite, .aside cite {
+	display: block;
+	text-align: right;
+	margin-top: 1em;
+}
+
+aside, .aside {
+	background: var(--aside);
+	border-left: 4px solid var(--aside-border);
+}
+
+.note {
+	background: var(--note);
+	border-left: 4px solid var(--note-border);
+	font-style: italic;
+}
+
+@keyframes blinkBorder {
+  0%, 100% { border-color: var(--alert-border); } /* Default border color */
+  50% { border-color: var(--alert); } /* Blink to black */
+}
+
+.alert {
+	background: var(--alert);
+	border-left: 4px solid var(--alert-border);
+	font-weight: bold;
+	animation: blinkBorder 2s infinite ease-in-out;
+}
+
+div.highlight div {
+	border-radius: 5px;
+}
+
+hr {
+	margin: 2em 0;
+	border: none;
+	text-align: center;
+}
+
+hr::before {
+	content: "•••••";
+	display: block;
+	color: var(--link);
+}
+
+sup a {
+	text-decoration: none;
+}
+
+.footnote-backref {
+	text-decoration: none;
+}
+
+.microblog_conversation {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.microblog_post {
+	margin-bottom: 1em;
+	padding: 1em;
+	border: 1px solid var(--code);
+	border-radius: 5px;
+}
+
+.microblog_user {
+	font-weight: bold;
+}
+
+.microblog_user img {
+	vertical-align: middle;
+	width: 40px;
+	height: auto;
+	border-radius: 40px;
+	max-width: 40px !important;
+}
+
+.microblog_text img {
+	max-width: 100%;
+	border-radius: 5px;
+}
+
+.microblog_time a,
+.microblog_time a:visited {
+	color: var(--accent2);
+	font-size: 0.8em;
+	text-decoration: none;
+}
+
+.microblog_narration_button {
+	color: var(--audio-link);
+}
+
+.microblog_narration_button span {
+	vertical-align: baseline !important;
+}
+
+footer {
+	margin-top: 2em;
+	text-align: center;
+}
+
+footer .custom_footer {
+	font-size: 0.75em;
+	color: var(--accent2);
+}
+
+footer .attribution {
+	display: none;
+}
+
+footer i {
+	font-size: 1.5em;
+	padding: 0 5px;
+}
+
+footer a i:hover {
+	color: var(--text);
+}
+
+.full-archives {
+	overflow-wrap: anywhere;
+}
+
+p>code,
+li>code,
+span.tinylytics_hits,
+span.tinylytics_uptime {
+	background: var(--code);
+	padding: 2px 4px;
+	font-size: 0.9em;
+	border-radius: 5px;
+	font-family: var(--font_monospace_code);
+}
+
+.tinylytics_countries {
+	font-size: 1.5em;
+	line-height: 1em;
+}
+
+mark {
+	background: var(--mark);
+	color: var();
+}
+
+.tiny-img {
+	max-width: 25em;
+}
+
+.tiny-text {
+	font-size: 0.6em;
+}
+
+/* IF USING THE TINY THEME ADD ON FOR SUMMARY POSTS */
+
+.p-summary {
+	margin-bottom: 2em;
+}
+
+/* IFRAME FIX */
+iframe {max-width: 100%;}
+
+/* MAKES VIDEO EMBEDS THAT DON'T USE IFRAME RESPONSIVE. DOES NOT WORK WITH YOUTUBE. */
+video {
+	width: 100% !important;
+	height: auto !important;
+	background: var(--code);
+	border-radius: 5px;
+}
+
+/* Styling specific to Tinylytics Plugin */
+
+.did_select {
+	background: var(--link);
+	color: var(--button-text);
+	opacity: 0.8;
+	cursor: not-allowed;
+}
+
+.tinylytics_webring {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	gap: 3px;
+	justify-content: center;
+}
+
+a.tinylytics_webring {
+	text-decoration: none;
+}
+
+.tinylytics_webring_avatar {
+	width: auto;
+	height: 1.75em;
+	border-radius: 100%;
+}
+
+/* STYLING TO TWEAK CODE BLOCKS (SYNTAX HIGHLIGHTING) */
+
+.highlight {
+	font-size: 0.9em;
+	line-height: 1em;
+}
+
+pre {
+	overflow: auto;
+	padding: 1em;
+}
+
+/* OVERRIDING DEFAULT MICROBLOG AND PLUGIN CSS. Using !important isn't ideal, but it's the most effective for these things. */
+
+.photos-grid-container {
+	grid-column-gap: 5px !important;
+}
+
+input[type=text],
+input[type=search],
+input[type=email] {
+	padding: 10px;
+	font-size: 0.9em;
+	border: 1px solid var(--link) !important;
+	border-radius: 5px !important;
+	color: var(--text);
+	display: block;
+	height: auto;
+	background: var(--field);
+	margin: 5px 0;
+}
+
+input[type=submit],
+button {
+	vertical-align: baseline;
+	padding: 5px 10px;
+	font-size: 0.9em;
+	border-radius: 5px;
+	border: 1px solid var(--link);
+	background: none;
+	color: var(--link);
+	-webkit-appearance: none;
+	margin-top: 5px;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+input[type=submit]:hover,
+button:hover {
+	background: var(--link);
+	color: var(--button-text);
+}
+
+label {
+	font-weight: bold;
+}
+
+form p {
+	margin-bottom: 0;
+}
+
+#search-space-info {
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.bookshelf_book {
+	margin-bottom: 2em;
+}
+
+.bookshelf_title {
+	font-weight: bold;
+}
+
+.bigfoot-footnote__content {
+	color: #000;
+}
+
+.microblog_shared_note {
+	background: red;
+	margin: 0 auto;
+	padding: 5px;
+	border-radius: 5px;
+	color: white;
+	width: fit-content;
+}
+
+.blogroll li a {
+	color: var(--text);
+	text-decoration: none;
+}
+
+.blogroll li a span {
+	color: var(--link);
+	text-decoration: underline;
+}
+
+.blogroll li a span:hover {
+	text-decoration: none;
+}
+
+.microblog_reply_textarea textarea {
+	width: calc(100% - 2em);
+	border-radius: 5px;
+	border: 1px solid var(--code);
+	padding: 1em;
+	font-size: 1em;
+}
+
+.microblog_reply_button {
+	margin-top: 0;
+}
+
+/* Adaptive Photo Layout Feature */
+
+.adaptive_photo_layout ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Flexible grid items */
+	gap: 10px; /* Adds spacing between items */
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	align-items: start; /* Aligns items at the top of the container */
+}
+
+.adaptive_photo_layout li {
+	display: block; /* Block display for better control over individual items */
+	width: 100%;
+	overflow: hidden; /* Keeps images within the boundaries */
+	border-radius:5px;
+}
+
+.adaptive_photo_layout img {
+	width: 100%; /* Ensures the image scales up to the container width */
+	height: auto; /* Allows height to adjust naturally, preserving the image's aspect ratio */
+	object-fit: cover; /* Covers the area, ensures no white space around images */
+	vertical-align: bottom;
+	border-radius: 0;
+	transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for transform and opacity */
+}
+
+.adaptive_photo_layout img:hover {
+	transform: scale(1.05); /* Slightly enlarges the image */
+	opacity: 0.9; /* Slightly reduces the opacity */
+}
+
+@media (max-aspect-ratio: 1/1) {
+	.adaptive_photo_layout li {
+		height: auto; /* Auto height for more natural flow */
+	}
+}
+
+@media (max-height: 480px) {
+	.adaptive_photo_layout li {
+		height: auto; /* Consistent with masonry style, allowing natural height */
+	}
+}
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+	.adaptive_photo_layout ul {
+		grid-template-columns: 100%; /* One column layout for very narrow screens */
+	}
+
+	.adaptive_photo_layout li {
+		height: auto;
+	}
+}
