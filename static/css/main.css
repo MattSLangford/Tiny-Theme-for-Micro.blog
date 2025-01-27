@@ -492,8 +492,13 @@ pre {
 }
 
 input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=tel],
 input[type=search],
-input[type=email] {
+input[type=number],
+textarea {
 	padding: 10px;
 	font-size: 0.9em;
 	border: 1px solid var(--link) !important;
