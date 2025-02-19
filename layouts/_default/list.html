@@ -31,6 +31,10 @@
                       {{ end }}
                   </a></p>
               </div>
+              {{ else if .Params.custom_summary }}
+              <div class="p-summary">
+                  <p>{{ .Summary | safeHTML }}<p>
+              </div>
               {{ else }}
               <div class="e-content">
                   {{ .Content }}
