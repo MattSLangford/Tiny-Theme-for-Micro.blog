@@ -15,4 +15,5 @@ Tiny Theme is created and maintained by Matt Langford ([follow on Micro.blog](ht
 
 Help fund ongoing work on Tiny, Sumo, and Bayou — clean, fast themes for Micro.blog. Your support keeps them updated and free for everyone. Plus, get access to custom ChatGPT powered support.
 
-<a href="https://donate.stripe.com/7sI28l5dCdvA0Mg6oq" class="donate-btn one-time">One-Time (Any Amount)</a>| <a href="https://donate.stripe.com/dR6aER8pO2QWdz29AD" class="donate-btn recurring">Monthly $5</a>
+- <a href="https://donate.stripe.com/7sI28l5dCdvA0Mg6oq" class="donate-btn one-time">One-Time (Any Amount)</a>
+- <a href="https://donate.stripe.com/dR6aER8pO2QWdz29AD" class="donate-btn recurring">Monthly $5</a>
