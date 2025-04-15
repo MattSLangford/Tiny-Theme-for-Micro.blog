@@ -36,7 +36,6 @@
   {{ else }}
   <link rel="stylesheet" href="{{ "css/all.min.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   {{ end }}
-  {{ partial "microblog_head.html" . }}
   {{ if templates.Exists "partials/microhook-head.html" }}
   {{ partial "microhook-head.html" . }}
   {{ end }}
