@@ -125,6 +125,10 @@ a.post-date:hover {
 	text-decoration: none;
 }
 
+.p-name {
+	text-wrap: balance;
+}
+
 .e-content {
 	margin-bottom: 2em;
 	overflow-wrap: anywhere;
