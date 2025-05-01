@@ -1,3 +1,3 @@
-Tiny Theme for Micro.blog Version 2.9.1
+Tiny Theme for Micro.blog Version 2.9.2
 Created by Matt Langford (mattlangford.com)
 Documentation: tiny.micro.blog
