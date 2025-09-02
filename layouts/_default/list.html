@@ -8,6 +8,9 @@
 {{ if templates.Exists "partials/microhook-category-header.html" }}
   {{ partial "microhook-category-header.html" . }}
 {{ end }}
+{{ if .Description }}
+<div class="list-description">{{ .Description | markdownify }}</div>
+{{ end }}
   <ul class="post-list">
     {{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") }}
     {{ range .Paginator.Pages  }}
