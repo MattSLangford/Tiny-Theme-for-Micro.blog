@@ -9,11 +9,10 @@ Tiny Theme is developed for use with the Micro.blog platform. It is designed to 
 
 ## Credits
 
-Tiny Theme is created and maintained by Matt Langford ([follow on Micro.blog](http://micro.blog/mtt?remote_follow=1)). If you have bug reports or feature requests, you can submit them [Github](https://github.com/MattSLangford/Tiny-Theme-for-Micro.blog) (make sure you star the repo) or [contact Matt directly](https://mattlangford.com/about/#contact).
+Tiny Theme is created and maintained by Matt Langford ([follow on Mastodon](https://mastodon.social/@mtt). If you have bug reports or feature requests, you can submit them [Github](https://github.com/MattSLangford/Tiny-Theme-for-Micro.blog) (make sure you star the repo) or [contact Matt directly](https://mattlangford.com/).
 
 ## Support Themes by Matt Langford
 
-Help fund ongoing work on Tiny, Sumo, and Bayou — clean, fast themes for Micro.blog. Your support keeps them updated and free for everyone. Plus, get access to custom ChatGPT powered support.
+Help fund ongoing work on Tiny, Sumo, and Bayou — clean, fast themes for Micro.blog. Your support keeps them updated and free for everyone.
 
-- <a href="https://donate.stripe.com/7sI28l5dCdvA0Mg6oq" class="donate-btn one-time">One-Time (Any Amount)</a>
-- <a href="https://donate.stripe.com/dR6aER8pO2QWdz29AD" class="donate-btn recurring">Monthly $5</a>
+- <a href="https://buymeacoffee.com/mattlangford" class="donate-btn one-time">Donate to Support This Project)</a>
