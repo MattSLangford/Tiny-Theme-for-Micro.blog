@@ -27,14 +27,14 @@
   {{ if templates.Exists "partials/microhook-categories.html" }}
   {{ partial "microhook-categories.html" . }}
   {{ else }}
-  {{ if .Params.categories }}
-  {{ with .GetTerms "categories" }}
+  {{ if and .Params.categories (not .Site.Params.show_categories) }}
     <ul class="post-tags">
-      {{ range . }}
-        <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+      {{ range .Params.categories }}
+      {{ $categoryName := . }}
+      {{ $categoryTaxonomy := index $.Site.Taxonomies.categories ($categoryName | urlize) }}
+        <li><a href="/categories/{{ . | urlize }}">{{ . }}</a></li>
       {{ end }}
     </ul>
-  {{ end }}
   {{ end }}
   {{ end }}
 
